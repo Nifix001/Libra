@@ -137,8 +137,12 @@ header nav a select{
   padding: 10px 36px
 }
 
-.arrow{
+.home-layout > a{
   position: relative;
   left: 720px;
   top: -40px;
+}
+
+.home-layout > a:active{
+  transform: rotate(180deg);
 }

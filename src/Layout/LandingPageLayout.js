@@ -8,7 +8,7 @@ export default function LandingPageLayout() {
         <img src={img1} alt="logo" />
         <nav>
             <NavLink to="/">Home</NavLink>
-            <NavLink to="sevices">Services</NavLink>
+            <NavLink to="services">Services</NavLink>
             <NavLink to="settings">
                 <select name="" id="">
                 <option value="">Settings</option>

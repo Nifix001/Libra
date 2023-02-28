@@ -16,9 +16,9 @@ export default function HomeLayout() {
       </div>
       <img src={rec3} alt="reading girl" />
       </div>
-      <div className="arrow">
+    
         <NavLink to="services" ><img src={vector} alt="arrow" /></NavLink>
-        </div>
+      
 
 
       <Outlet />
