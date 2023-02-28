@@ -21,8 +21,8 @@ header{
 }
 
 header img{
-  width: 54px;
-  height: 35px;
+  width: 85px;
+  height: 40px;
   justify-content: flex-start;
   margin-left: 75px;
 }
@@ -72,23 +72,23 @@ header nav a select{
   padding: 6px 26px;
 }
 
-.home-layout{
+.home-layout1{
   display:flex;
   flex-direction: row;
 }
 
-.home-layout img{
+.home-layout1 img{
   height:750px;
   width: 40%;
   margin-right: 35px;
 }
 
-.home-layout > div{
+.home-layout1 > div{
   padding: 180px 20px 50px 80px;
   width: 55%;
 }
 
-.home-layout div h1{
+.home-layout1 div h1{
   font-family: Lexend;
   font-size: 64px;
   font-weight: 600;
@@ -98,7 +98,7 @@ header nav a select{
   color: #353135;
 }
 
-.home-layout div p{
+.home-layout1 div p{
   font-family: Lexend;
   font-size: 28px;
   font-weight: 400;
@@ -116,7 +116,7 @@ header nav a select{
   margin-top: 25px;
 }
 
-.home-layout a{
+.home-layout1 a{
   border: 2px solid #19CC56;
   text-decoration: none;
   padding: 10px 40px;
@@ -131,8 +131,14 @@ header nav a select{
  text-align: center; 
 }
 
-.home-layout a:hover{
+.home-layout1 a:hover{
   background-color: #19CC56;
   color: white;
   padding: 10px 36px
+}
+
+.arrow{
+  position: relative;
+  left: 720px;
+  top: -40px;
 }
