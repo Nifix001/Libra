@@ -1,5 +1,5 @@
-import { NavLink } from "react-router-dom";
-
+import { NavLink, Outlet } from "react-router-dom";
+import vector from "../images/chevron-down.png"
 
 export default function Services() {
   return (
@@ -74,11 +74,15 @@ export default function Services() {
                     </div>
                 </div>
             </div>
+            <div className="nav-btn">
             <NavLink><div></div></NavLink>
             <NavLink><div></div></NavLink>
             <NavLink><div></div></NavLink>
             <NavLink><div></div></NavLink>
+            </div>
         </div>
+        <NavLink to="others" ><img src={vector} alt="arrow" /></NavLink>
+        <Outlet />
     </div>
   )
 }

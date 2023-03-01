@@ -137,10 +137,10 @@ header nav a select{
   padding: 10px 36px
 }
 
-.home-layout > a{
+a img{
   position: relative;
   left: 720px;
-  top: -40px;
+  top: -30px;
 }
 
 .home-layout > a:active{
