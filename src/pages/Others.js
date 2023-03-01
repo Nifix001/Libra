@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import vector from "../images/chevron-down.png"
 
 export default function Others() {
@@ -121,9 +121,9 @@ export default function Others() {
                 <button>Send</button>    
             </div>       
 
-            <NavLink to="others" ><img src={vector} alt="arrow" /></NavLink>
-
       </div>
+      <NavLink to="footer" ><img src={vector} alt="arrow" /></NavLink>
+      <Outlet />
     </div>
   )
 }
