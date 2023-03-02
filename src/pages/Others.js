@@ -88,8 +88,8 @@ export default function Others() {
             </div>
       </div>
       <div className="reviews">
-        <h2>Reviews and Ratings</h2>
-            <div>
+        <h3>Reviews and Ratings</h3>
+            <div className="reviews-1">
                 <div className="personal-reviews">
                     <div className="personal-details">
                         <img src={ot5} alt="" />
