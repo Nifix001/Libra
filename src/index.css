@@ -352,6 +352,11 @@ color: #5E5A5E;
   text-align: left;
 }
 
+.others-2 a hr{
+  color: #19CC56;
+  margin-top: -5px;
+}
+
 .others-2 select{
   border: none;
   font-family: Lexend;
@@ -375,6 +380,7 @@ color: #5E5A5E;
   letter-spacing: 0em;
   text-align: left;
   color: #AEADAE;
+  padding-left: 35px;
 }
 
 .reviews{
@@ -387,14 +393,14 @@ color: #5E5A5E;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  gap: 5px;
-  margin: 75px 0 125px 0 ;
+  gap: 10px;
+  margin: 80px 0 125px 0 ;
 }
 
 .personal-reviews{
   background-color: #FFFFFF;
-  border-radius: 5px;
-  padding: 10px;
+  border-radius: 12px;
+  padding: 10px 5px;
 }
 .personal-details{
   display: flex;
@@ -404,10 +410,41 @@ color: #5E5A5E;
 }
 
 .personal-details img{
-  justify-content: flex-start;
+  height: 64px;
+  width: 64px;
 }
 
 .personal-details > div{
-  justify-content: flex-end;
-  align-items: flex-end;
+  margin-left: 40px;
+}
+
+.personal-details > div > h4{
+  font-family: Lexend;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color:  #353135;
+}
+
+.personal-details > div > h5{
+  font-family: Lexend;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #AEADAE;
+}
+
+.personal-reviews p{
+  font-family: Lexend;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #353135;
+  margin: 10px;
 }

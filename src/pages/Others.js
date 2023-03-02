@@ -16,7 +16,7 @@ export default function Others() {
             <h3>Other Books</h3>
             <div className="others-1">
                 <div className="others-2">
-                    <NavLink to="/">All</NavLink>
+                    <NavLink to="/">All<hr /></NavLink>
                     <select>
                         <option value="">Genre</option>
                     </select>
