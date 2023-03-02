@@ -33,7 +33,7 @@ export default function Services() {
             <h3>Trending Books</h3>
             <div className="trend">
             <div className="trends-1">
-                <div className="trends-2">
+                <div className="trends-2a">
                     <img src={img4} alt="" />
                 </div>
                 <div className="trends-3">

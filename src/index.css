@@ -161,6 +161,8 @@ a img{
   line-height: 45px;
   letter-spacing: 0em;
   color: #353135;
+  margin-top: 5px;
+  margin-bottom: -30px;
 }
 
 .services{
@@ -171,6 +173,7 @@ a img{
   text-align: center;
   justify-content: center;
   margin: 50px 0;
+  padding: 50px 0 70px 0;
 }
 
 .services-1{
@@ -182,7 +185,7 @@ a img{
   align-items: center;
   padding: 10px;
   width: 400px;
-  height: 280px; 
+  height: 300px; 
 }
 
 .services-1 h4{
@@ -212,14 +215,16 @@ a img{
 
 .trends{
   background: linear-gradient(90deg, rgba(241, 255, 246, 0.86) 0%, rgba(248, 248, 248, 0.86) 101.67%);
+  padding: 30px 10px 200px 10px;
 }
+
 
 .trend{
   display: flex;
   flex-direction: row;
-  gap: 20px;
-  align-items: center;
+  gap: 25px;
   justify-content: center;
+  margin-top: 80px;
 }
 
 .trends-1{
@@ -227,12 +232,76 @@ a img{
   background: #FFFFFF;
   box-shadow: 0px 4px 8px rgba(51, 51, 51, 0.1);
   border-radius: 0px 0px 12px 12px;
-  width: 200px;
+  width: 220px;
 
 }
 
 .trends-2{
   background-color:rgba(226, 226, 226, 0.7); 
-  margin-top: -10px;
-  margin-right: -10px;
+  height: 220px;
+  margin:  -10px -10px 10px -10px;
+}
+
+.trends-2 img{
+  width: 200px;
+  height: 180px;
+  margin-left: 15px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.trends-2a img{
+  width: 240px;
+  height: 225px;
+  margin: -10px -10px 5px -10px;
+  background-color:rgba(226, 226, 226, 0.7); 
+}
+
+
+.trends-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+}
+.trends-3 h5{
+  font-family: 'Lexend';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 20px;
+color: #5E5A5E;
+}
+
+.trends-3 h6{
+  font-family: 'Lexend';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #5E5A5E;
+}
+
+
+.trends-4{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; 
+}
+
+.trends-4 button{
+   align-items: center;
+    background: #19CC56;
+    border-radius: 10px;
+    border: none;
+    color: #FFFFFF;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    height: 25px;
+    width: 105px;
 }
