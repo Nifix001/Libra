@@ -1,23 +1,26 @@
 import { NavLink, } from "react-router-dom";
+import fot from "../images/Rectangle 15.png"
 
 
 export default function Footer() {
   return (
     <div className="footer">
         <div className="footer-a">
-           <img src="" alt="" /> 
-           <div>
+           <img src={fot} alt="" /> 
+           <div className="footer-b">
             <h3>We dedicate time diligently to provide <br /> books for you <hr /></h3>
             <p>Read through our code of conduct and terms of agreement on borrowing of books</p>
             <button>Read</button>
            </div>
         </div>
-        <div className="footer-b">
+        <div className="footer-c">
             <p>Contact us on:</p>
             <div className="socials">
-            <NavLink><img src="" alt="facebook" /></NavLink>
-            <NavLink><img src="" alt="google" /></NavLink>
-            <NavLink><img src="" alt="twitter" /></NavLink>
+            <NavLink><i></i></NavLink>
+            <NavLink><i></i></NavLink>
+            <NavLink><i></i></NavLink>
+            <NavLink></NavLink>
+            <NavLink></NavLink>
             </div>
             <div>
              <NavLink>Libraread Group</NavLink>   
