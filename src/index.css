@@ -516,11 +516,20 @@ color: #5E5A5E;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .input-reviews input{
   border: 0.8px solid #AEADAE;
   height: 68px;
   width: 620px;
+}
+
+.input-reviews button{
+  height: 68px;
+  width: 70px;
+  border: none;
+  border-radius: 0 10px 10px 0;
+  background-color: #19CC56;
+  color: #FFFFFF;
 }
