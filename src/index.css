@@ -83,6 +83,7 @@ header nav a select{
   height:750px;
   width: 40%;
   margin-right: 35px;
+  margin-bottom: 35px;
 }
 
 .home-layout1 > div{
@@ -141,7 +142,7 @@ header nav a select{
 
 a img{
   position: relative;
-  left: 650px;
+  left: 640px;
   top: -30px;
 }
 

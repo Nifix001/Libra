@@ -1,6 +1,5 @@
 import { NavLink, Outlet } from "react-router-dom";
 import rec3 from "../images/Rectangle 3.png"
-import vector from "../images/chevron-down.png"
 
 export default function HomeLayout() {
   return (
@@ -17,7 +16,6 @@ export default function HomeLayout() {
       <img src={rec3} alt="reading girl" />
       </div>
     
-        <NavLink to="services" ><img src={vector} alt="arrow" /></NavLink>
       
 
 
