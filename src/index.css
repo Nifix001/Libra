@@ -139,7 +139,7 @@ header nav a select{
 
 a img{
   position: relative;
-  left: 700px;
+  left: 670px;
   top: -30px;
 }
 
@@ -385,7 +385,7 @@ color: #5E5A5E;
 
 .reviews{
   background: linear-gradient(90deg, rgba(241, 255, 246, 0.86) 0%, rgba(248, 248, 248, 0.86) 101.67%);
-  padding: 30px 10px 200px 10px;
+  padding: 30px 10px 120px 10px;
 }
 
 .reviews-1{
@@ -516,18 +516,39 @@ color: #5E5A5E;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 .input-reviews input{
   border: 0.8px solid #AEADAE;
-  height: 68px;
+  height: 50px;
   width: 620px;
 }
 
 .input-reviews button{
-  height: 68px;
-  width: 70px;
+  font-family: Lexend;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+  height: 52px;
+  width: 80px;
+  border: none;
+  border-radius: 0 10px 10px 0;
+  background-color: #19CC56;
+  color: #FFFFFF;
+}
+
+.input-reviews button:hover{
+  font-family: Lexend;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+  height: 50px;
+  width: 78px;
   border: none;
   border-radius: 0 10px 10px 0;
   background-color: #19CC56;
