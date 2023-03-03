@@ -317,7 +317,7 @@ color: #5E5A5E;
 
 .others{
   background-color: #FFFFFF;
-  padding: 30px 10px 200px 10px;
+  padding: 30px 10px 150px 10px;
 }
 
 .others-1{
@@ -394,7 +394,7 @@ color: #5E5A5E;
   align-items: center;
   justify-content: flex-start;
   gap: 10px;
-  margin: 80px 0 125px 0 ;
+  margin: 80px 60px 125px 60px ;
 }
 
 .personal-reviews{
@@ -455,7 +455,7 @@ color: #5E5A5E;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  margin-top: 120px;
+  margin-top: 80px;
   margin-bottom: -50px;
 }
 
@@ -465,7 +465,18 @@ color: #5E5A5E;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
+  margin-top: -40px;
+}
+
+.others .nav-btn{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-top: 80px;
+    
 }
 
 .nav-btn a div{
@@ -481,3 +492,9 @@ color: #5E5A5E;
   border-radius: 4px;
   background: #19CC56;
 }
+
+.hr hr{
+  border: 2px dashed #AEADAE;
+  margin: 5px 60px;
+}
+

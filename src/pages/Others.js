@@ -139,9 +139,10 @@ export default function Others() {
                 <NavLink><div></div></NavLink>
                 <NavLink><div></div></NavLink>
                 <NavLink><div></div></NavLink>
-                <NavLink><div></div></NavLink>
-            </div> 
+            </div>
+            <div className="hr"> 
             <hr />
+            </div>
             <h4>Have reviews or ratings to about your favourite book? Enter it below.</h4>
             <div className="input-reviews">
                 <input type="text" />
