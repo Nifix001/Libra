@@ -9,28 +9,32 @@ const DataR = [
         image: ot5,
         name: "Karoline Red",
         title: "Chef",
-        review: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, voluptatem culpa iusto assumenda explicabo enim? Aliquam, a nisi! Ipsam accusantium est accusamus necessitatibus nobis optio, maiores libero repellendus totam nam."
+        review: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, voluptatem culpa iusto assumenda explicabo enim? Aliquam, a nisi! Ipsam accusantium est accusamus necessitatibus nobis optio, maiores libero repellendus totam nam.",
+        ratings: <i></i>
     },
     {
         id: 2,
         image: ot6,
         name: "Collins Aloba",
         title: "Teacher",
-        review: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, voluptatem culpa iusto assumenda explicabo enim? Aliquam, a nisi! Ipsam accusantium est accusamus necessitatibus nobis optio, maiores libero repellendus totam nam."
+        review: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, voluptatem culpa iusto assumenda explicabo enim? Aliquam, a nisi! Ipsam accusantium est accusamus necessitatibus nobis optio, maiores libero repellendus totam nam.",
+        ratings: <i></i>
     },
     {
         id: 3,
         image: ot7,
         name: "Alo Bosede",
         title: "Forex Trader",
-        review: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, voluptatem culpa iusto assumenda explicabo enim? Aliquam, a nisi! Ipsam accusantium est accusamus necessitatibus nobis optio, maiores libero repellendus totam nam."
+        review: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, voluptatem culpa iusto assumenda explicabo enim? Aliquam, a nisi! Ipsam accusantium est accusamus necessitatibus nobis optio, maiores libero repellendus totam nam.",
+        ratings: <i></i>
     },
     {
         id: 1,
         image: ot8,
         name: "Bill Brown",
         title: "Sales Manager",
-        review: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, voluptatem culpa iusto assumenda explicabo enim? Aliquam, a nisi! Ipsam accusantium est accusamus necessitatibus nobis optio, maiores libero repellendus totam nam."
+        review: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, voluptatem culpa iusto assumenda explicabo enim? Aliquam, a nisi! Ipsam accusantium est accusamus necessitatibus nobis optio, maiores libero repellendus totam nam.",
+        ratings: <i></i>
     },
 ]
 
