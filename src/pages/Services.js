@@ -8,7 +8,7 @@ import img5 from "../images/image 9.png";
 import img6 from "../images/image 11.png";
 import img7 from "../images/image 8.png";
 
-export default function Services() {
+export default function Services(props) {
   return (
     <div className="srv">
         <h3>What We Do</h3>

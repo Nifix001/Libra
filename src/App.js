@@ -4,9 +4,9 @@ import  HomeLayout  from "./Layout/HomeLayout";
 import Services from "./pages/Services";
 import Others from "./pages/Others";
 import Footer from "./pages/Footer";
-import data from "./data";
+import Data from "./Data";
 
-const  books = data.map(item => {
+const  books = Data.map(item => {
   return (
     <Services 
       key={item.id}
