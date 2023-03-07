@@ -8,6 +8,7 @@ import img5 from "../images/image 9.png";
 import img6 from "../images/image 11.png";
 import img7 from "../images/image 8.png";
 import data from "../database/Data";
+import DataW from "../database/DataW";
 
 export default function Services() {
 
