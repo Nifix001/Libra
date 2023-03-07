@@ -8,6 +8,7 @@ import ot5 from "../images/Ellipse 1.png";
 import ot6 from "../images/Ellipse 2.png";
 import ot7 from "../images/Ellipse 3.png";
 import ot8 from "../images/Ellipse 4.png";
+import DataO from "../database/DataO";
 
 export default function Others() {
   return (
