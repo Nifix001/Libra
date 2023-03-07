@@ -4,6 +4,16 @@ import  HomeLayout  from "./Layout/HomeLayout";
 import Services from "./pages/Services";
 import Others from "./pages/Others";
 import Footer from "./pages/Footer";
+import data from "./data";
+
+const  books = data.map(item => {
+  return (
+    <Services 
+      key={item.id}
+      {...item}
+      />
+  )
+})
 
 const router = createBrowserRouter(
   createRoutesFromElements(
