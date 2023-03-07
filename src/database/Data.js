@@ -3,7 +3,8 @@ import img5 from "../images/image 9.png";
 import img6 from "../images/image 11.png";
 import img7 from "../images/image 8.png";
 
-export default [
+
+const data = [
     {
         id: 1,
         title: "Steal like an artist",
@@ -33,3 +34,7 @@ export default [
         button: "View details"
     },
 ]
+
+export default data
+
+ 

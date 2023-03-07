@@ -7,8 +7,11 @@ import img4 from "../images/image 7.png";
 import img5 from "../images/image 9.png";
 import img6 from "../images/image 11.png";
 import img7 from "../images/image 8.png";
+import data from "../database/Data";
 
 export default function Services() {
+
+
   return (
     <div className="srv">
         <h3>What We Do</h3>
