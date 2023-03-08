@@ -55,58 +55,7 @@ export default function Others() {
                 </div>
             </div>
             <div className="trend">
-            <div className="trends-1">
-                <div className="trends-2">
-                    <img src={ot1} alt="" />
-                </div>
-                <div className="trends-3">
-                    <h5>The Alchemist</h5>
-                    <h6>Paulo Coelho</h6>
-                    <div className="trends-4">
-                        <i></i>
-                        <button>View details</button>
-                    </div>
-                </div>
-            </div>
-            <div className="trends-1">
-                <div className="trends-2">
-                    <img src={ot2} alt="" />
-                </div>
-                <div className="trends-3">
-                    <h5>A confederacy of dunces</h5>
-                    <h6>John Kenneddy T.</h6>
-                    <div className="trends-4">
-                        <i></i>
-                        <button>View details</button>
-                    </div>
-                </div>
-            </div>
-            <div className="trends-1">
-                <div className="trends-2">
-                    <img src={ot3} alt="" />
-                </div>
-                <div className="trends-3">
-                    <h5>Why we sleep</h5>
-                    <h6>Matthew Walker</h6>
-                    <div className="trends-4">
-                        <i></i>
-                        <button>View details</button>
-                    </div>
-                </div>
-            </div>
-            <div className="trends-1">
-                <div className="trends-2">
-                    <img src={ot4} alt="" />
-                </div>
-                <div className="trends-3">
-                    <h5>An enemy called average</h5>
-                    <h6>John L. Mason</h6>
-                    <div className="trends-4">
-                        <i></i>
-                        <button>View details</button>
-                    </div>
-                </div>
-            </div>
+                { dataO }
             </div>
             <div className="nav-btn">
             <NavLink><div></div></NavLink>
