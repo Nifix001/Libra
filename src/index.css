@@ -165,7 +165,7 @@ a img{
 }
 
 .srv a img:hover{
-  animation: dance 3s infinite;
+  animation: dance 2.5s infinite;
 }
 @keyframes dance{
   0%{
