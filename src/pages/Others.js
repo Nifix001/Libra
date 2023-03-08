@@ -18,7 +18,10 @@ export default function Others() {
         return(
             <Trending
             key={others.id}
-            others={...others}
+            image={others.image}
+            title={others.title}
+            author={others.author}
+            button={others.button}
             />
         )
     })
