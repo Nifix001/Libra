@@ -9,20 +9,28 @@ import ot6 from "../images/Ellipse 2.png";
 import ot7 from "../images/Ellipse 3.png";
 import ot8 from "../images/Ellipse 4.png";
 import DataO from "../database/DataO";
+import DataR from "../database/DataR"
 import Reviews from "../framework/Reviews";
 import Trending from "../framework/Trending";
 
 export default function Others() {
     const dataO = DataO.map(others => {
         return(
-            <DataO
+            <Trending
             key={others.id}
             others={...others}
             />
         )
     })
 
-    const dataR =Re
+    const dataR = DataR.map(reviews => {
+        return (
+            <Reviews 
+            key={reviews.id}
+            reviews={...reviews}
+            />
+        )
+    })
   return (
     <div>
         <div className="others">
