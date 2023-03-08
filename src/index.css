@@ -146,10 +146,6 @@ a img{
   top: -30px;
 }
 
-.home-layout > a:active{
-  transform: rotate(180deg);
-}
-
 .srv{
   background-color: white;
   padding: 30px 15px;
@@ -166,6 +162,19 @@ a img{
   color: #353135;
   margin-top: 5px;
   margin-bottom: -30px;
+}
+
+.srv a img:hover{
+  animation: dance 3s infinite;
+}
+@keyframes dance{
+  0%{
+    transform: translateY(-20px);
+  }
+
+  100%{
+    transform: translateY(20px);
+  }
 }
 
 .services{
