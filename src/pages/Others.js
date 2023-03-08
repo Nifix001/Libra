@@ -27,7 +27,11 @@ export default function Others() {
         return (
             <Reviews 
             key={reviews.id}
-            reviews={...reviews}
+            image={reviews.image}
+            name={reviews.name}
+            title={reviews.title}
+            review={reviews.review}
+            rating={reviews.rating}
             />
         )
     })
