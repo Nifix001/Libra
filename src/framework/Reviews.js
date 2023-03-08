@@ -10,7 +10,7 @@ export default function Reviews(props) {
                         </div>
                     </div>
                         <p>{props.review}</p>
-                        <div>{props.rating}</div>
+                        <div>{props.ratings}</div>
         </div>
     </div>
   )
