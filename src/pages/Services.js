@@ -9,29 +9,26 @@ import img6 from "../images/image 11.png";
 import img7 from "../images/image 8.png";
 import data from "../database/Data";
 import DataW from "../database/DataW";
+import WhatweDo from "../framework/WhatWeDo"
+import Trending from "../framework/Trending"
 
-export default function Services() {
-
+export default function Services(props) {
+    const whatWe = DataW.map(ourwork => {
+        return(
+            <WhatweDo 
+            key={ourwork.id}
+            image={ourwork.image}
+            title={ourwork.title}
+            content={ourwork.content}
+            />
+        )
+    })
 
   return (
     <div className="srv">
         <h3>What We Do</h3>
         <div className="services">
-        <div className="services-1">
-            <img src={img1} alt="" />
-            <h4>Source books</h4>
-            <p>We deligently go through the process <br /> of vetting, selecting, and compiling <br /> live changing books for your reading <br /> enjoment</p>
-        </div>
-        <div className="services-1">
-            <img src={img2} alt="" />
-            <h4>Lend Books</h4>
-            <p>We help you save some money while <br /> getting the same value through the <br /> lending of books at reduced rates</p>
-        </div>
-        <div className="services-1">
-            <img src={img3} alt="" />
-            <h4>Deliver Books</h4>
-            <p>Our efficient delivery services gets <br /> your books to your doorstep saving <br /> you some energy to read.</p>
-        </div>
+            { whatWe }
         </div>
         <div className="trends">
             <h3>Trending Books</h3>
