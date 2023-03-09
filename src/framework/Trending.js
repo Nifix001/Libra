@@ -1,7 +1,6 @@
 export default function Trending(props) {
   return (
     <div>
-      <Navlink to='/'></Navlink>
         <div className="trends-1">
                 <div className="trends-2">
                     <img src={props.image} alt="" />
