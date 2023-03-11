@@ -17,6 +17,15 @@ export default function SignUp() {
     }))
   }
 
+  function handleSubmit(event) {
+    event.preventDefault()
+    if(userData.password === userData.confirmPassword) {
+      alert("successfully signed up")
+    } else {
+      alert("enter correct password")
+    }
+  }
+
   return (
     <div className="bck">
         <header>
@@ -26,7 +35,7 @@ export default function SignUp() {
         <header>
         <h2>SIGN UP</h2>
         </header>
-        <form action="">
+        <form className="" onSubmit={handleSubmit}>
           <label htmlFor="email">Email<br />
           <input 
           type="email" 
