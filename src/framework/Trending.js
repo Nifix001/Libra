@@ -1,9 +1,7 @@
-import { NavLink } from "react-router-dom";
 
 export default function Trending(props) {
   return (
     <div>
-      <NavLink>
         <div className="trends-1">
                 <div className="trends-2">
                     <img src={props.image} alt="" />
@@ -17,7 +15,6 @@ export default function Trending(props) {
                     </div>
                 </div>
             </div>
-            </NavLink>
     </div>
   )
 }

@@ -5,6 +5,7 @@ import Services from "./pages/Services";
 import Others from "./pages/Others";
 import Footer from "./pages/Footer";
 import SignUp from "./pages/SignUp";
+import LogIn from "./pages/LogIn";
 
 
 const router = createBrowserRouter(
@@ -20,6 +21,7 @@ const router = createBrowserRouter(
         </Route>
         </Route> 
       <Route path="sign-up" element={<SignUp />} />
+      <Route path="login" element={<LogIn />} />
     </Route>
   )
 )

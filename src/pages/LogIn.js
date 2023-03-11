@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import img1 from "../images/Frame.png";
 
-export default function SignUp() {
+export default function LogIn() {
   return (
     <div className="bck">
         <header>
@@ -9,7 +9,7 @@ export default function SignUp() {
         </header>
         <div className="signup">
         <header>
-        <h2>SIGN UP</h2>
+        <h2>LOG IN</h2>
         </header>
         <form action="">
           <label htmlFor="email">Email<br />
@@ -18,21 +18,18 @@ export default function SignUp() {
           <label htmlFor="pword">Password<br />
           <input type="text" placeholder="Enter Password" id="pword"/><br />
           </label><br />
-          <label htmlFor="confirm">Confirm Password<br />
-          <input type="text" placeholder="Enter Password again" id="confirm"/><br />
-          </label><br />
-          <button>Sign Up</button>
+          <button>Log in</button>
         </form>
         <br />
         <div>
-        <p>Or sign up using</p>
+        <p>Or log in using</p>
         <div>
             <NavLink><i></i></NavLink>
             <NavLink><i></i></NavLink>
             <NavLink><i></i></NavLink>
         </div>
         </div>
-        <p>Already a member? <NavLink to="login">Login</NavLink></p>
+        <p>New member <NavLink to="sign-up">Sign Up</NavLink></p>
         </div>
         
     </div>
