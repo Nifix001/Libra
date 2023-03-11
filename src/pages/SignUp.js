@@ -1,8 +1,13 @@
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import img1 from "../images/Frame.png";
 
 export default function SignUp() {
   return (
-    <div>
+    <div className="bck">
+        <header>
+            <img src={img1} alt="" />
+        </header>
+        <div>
         <header>
         <h2>SIGN UP</h2>
         </header>
@@ -21,8 +26,7 @@ export default function SignUp() {
         </div>
         </div>
         <p>Already a member? <NavLink>Login</NavLink></p>
-
-        <Outlet />
+        </div>
     </div>
   )
 }
