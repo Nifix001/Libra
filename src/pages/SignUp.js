@@ -14,7 +14,6 @@ export default function SignUp() {
     setUserData(prevData => ({
       ...prevData,
       [name]: value
-
     }))
   }
 
