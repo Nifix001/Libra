@@ -1,7 +1,30 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, } from "react-router-dom";
 import img1 from "../images/Frame.png";
+import { useState } from "react";
 
 export default function LogIn() {
+  const [userDetails, setUserDetails] = useState({
+    email:"",
+    password:"",
+  })
+
+  function handleChange(event) {
+    const {name, value} = event.target
+    setUserDetails(prevDetails => ({
+      ...prevDetails,
+      [name]: value
+    }))
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault()
+    if(userDetails.email === userDetails.password) {
+      alert("successfully logged in")
+    } else {
+      alert("enter correct password")
+    }
+  }
+
   return (
     <div className="bck">
         <header>
@@ -11,12 +34,24 @@ export default function LogIn() {
         <header>
         <h2>LOG IN</h2>
         </header>
-        <form action="">
+        <form onSubmit={handleSubmit}>
           <label htmlFor="email">Email<br />
-          <input type="email" placeholder="Enter E-mail" id="email"/><br />
+          <input 
+          type="email" 
+          placeholder="Enter E-mail"
+          name="email"
+          value={userDetails.email}
+          onChange={handleChange} 
+          id="email"/><br />
           </label><br />
           <label htmlFor="pword">Password<br />
-          <input type="text" placeholder="Enter Password" id="pword"/><br />
+          <input 
+          type="text" 
+          placeholder="Enter Password"
+          name="password"
+          value={userDetails.password}
+          onChange={handleChange} 
+          id="pword"/><br />
           </label><br />
           <button>Log in</button>
         </form>
