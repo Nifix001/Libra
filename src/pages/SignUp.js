@@ -1,7 +1,23 @@
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import img1 from "../images/Frame.png";
 
 export default function SignUp() {
+  const [userData, setUserData] = useState({
+    email:"",
+    password:"",
+    confirmPassword:""
+  })
+
+  function handleChange(event) {
+    const {name, value} = event.target
+    setUserData(prevData => ({
+      ...prevData,
+      [name]: value
+
+    }))
+  }
+
   return (
     <div className="bck">
         <header>
@@ -13,13 +29,31 @@ export default function SignUp() {
         </header>
         <form action="">
           <label htmlFor="email">Email<br />
-          <input type="email" placeholder="Enter E-mail" id="email"/><br />
+          <input 
+          type="email" 
+          placeholder="Enter E-mail" 
+          name="email"
+          value={userData.email}
+          onChange={handleChange}
+          id="email"/><br />
           </label><br />
           <label htmlFor="pword">Password<br />
-          <input type="text" placeholder="Enter Password" id="pword"/><br />
+          <input 
+          type="text" 
+          placeholder="Enter Password"
+          name="password" 
+          value={userData.password}
+          onChange={handleChange}
+          id="pword"/><br />
           </label><br />
           <label htmlFor="confirm">Confirm Password<br />
-          <input type="text" placeholder="Enter Password again" id="confirm"/><br />
+          <input 
+          type="text" 
+          placeholder="Enter Password again"
+          name="confirmPassword"
+          value={userData.confirmPassword}
+          onChange={handleChange} 
+          id="confirm"/><br />
           </label><br />
           <button>Sign Up</button>
         </form>
