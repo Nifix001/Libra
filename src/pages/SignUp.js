@@ -32,10 +32,10 @@ export default function SignUp() {
             <img src={img1} alt="" />
         </header>
         <div className="signup">
-        <header>
-        <h2>SIGN UP</h2>
-        </header>
-        <form className="" onSubmit={handleSubmit}>
+        <form className="form" onSubmit={handleSubmit}>
+          <header>
+            <h2>SIGN UP</h2>
+          </header>
           <label htmlFor="email">Email<br />
           <input 
           type="email" 
@@ -64,8 +64,7 @@ export default function SignUp() {
           id="confirm"/><br />
           </label><br />
           <button>Sign Up</button>
-        </form>
-        <br />
+          <br />
         <div>
         <p>Or sign up using</p>
         <div>
@@ -75,6 +74,7 @@ export default function SignUp() {
         </div>
         </div>
         <p>Already a member? <NavLink to="login">Login</NavLink></p>
+        </form>
         </div>
         
     </div>
