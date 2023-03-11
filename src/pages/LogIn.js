@@ -31,10 +31,8 @@ export default function LogIn() {
             <img src={img1} alt="" />
         </header>
         <div className="signup">
-        <header>
-        <h2>LOG IN</h2>
-        </header>
-        <form onSubmit={handleSubmit}>
+        <form className="form" onSubmit={handleSubmit}>
+        <header><h2>LOG IN</h2></header>
           <label htmlFor="email">Email<br />
           <input 
           type="email" 
@@ -54,8 +52,7 @@ export default function LogIn() {
           id="pword"/><br />
           </label><br />
           <button>Log in</button>
-        </form>
-        <br />
+          <br />
         <div>
         <p>Or log in using</p>
         <div>
@@ -65,6 +62,8 @@ export default function LogIn() {
         </div>
         </div>
         <p>New member <NavLink to="sign-up">Sign Up</NavLink></p>
+        </form>
+        
         </div>
         
     </div>

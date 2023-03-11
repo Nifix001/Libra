@@ -720,4 +720,17 @@ color: #5E5A5E;
 
 .bck{
   background: linear-gradient(90deg, rgba(241, 255, 246, 0.86) 0%, rgba(248, 248, 248, 0.86) 101.67%);
+  padding: 50px 0px 80px 380px;
+}
+
+.form{
+  background-color: #FFFFFF;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 590px;
+  width: 550px;
+  border-radius: 0px;
+
 }
