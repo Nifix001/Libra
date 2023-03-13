@@ -1,4 +1,4 @@
-import { NavLink, } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import img1 from "../images/Frame.png";
 import { useState } from "react";
 
@@ -61,7 +61,7 @@ export default function LogIn() {
             <NavLink><i></i></NavLink>
         </div>
         </div>
-        <p>New member <NavLink to="sign-up">Sign Up</NavLink></p>
+        <p>New member <NavLink to="/sign-up">Sign Up</NavLink></p>
         </form>
         
         </div>

@@ -73,7 +73,7 @@ export default function SignUp() {
             <NavLink><i></i></NavLink>
         </div>
         </div>
-        <p>Already a member? <NavLink to="login">Login</NavLink></p>
+        <p>Already a member? <NavLink to="/login">Login</NavLink></p>
         </form>
         </div>
         
