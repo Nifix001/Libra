@@ -61,7 +61,7 @@ export default function LogIn() {
             <NavLink><i></i></NavLink>
         </div>
         </div>
-        <p>New member <NavLink to="/sign-up">Sign Up</NavLink></p>
+        <p>New member? <NavLink to="/sign-up">Sign Up</NavLink></p>
         </form>
         
         </div>
