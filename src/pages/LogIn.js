@@ -40,7 +40,7 @@ export default function LogIn() {
           name="email"
           value={userDetails.email}
           onChange={handleChange} 
-          id="email"/><br />
+          id="email"/><hr />
           </label><br />
           <label htmlFor="pword">Password<br />
           <input 
@@ -49,7 +49,7 @@ export default function LogIn() {
           name="password"
           value={userDetails.password}
           onChange={handleChange} 
-          id="pword"/><br />
+          id="pword"/><hr />
           </label><br />
           <button>Log in</button>
           <br />

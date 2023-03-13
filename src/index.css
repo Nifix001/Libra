@@ -736,22 +736,23 @@ color: #5E5A5E;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 590px;
+  height: 550px;
   width: 550px;
   border-radius: 12px;
   margin-top: 20px;
+  
 }
 
 .form header{
-  margin-top: -300px;
+  margin-top: -150px;
   align-items: center;
 }
 
 .form h2{
   font-family: Lexend;
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 600;
-  line-height: 40px;
+  line-height: 38px;
   letter-spacing: 0em;
   text-align: left;
   color: #090509;  
@@ -766,4 +767,10 @@ color: #5E5A5E;
   text-align: left;
   width: 416px;
   height: 80px;
+}
+
+.form input{
+  width: 416px;
+  height: 30px;
+  border: none;
 }
