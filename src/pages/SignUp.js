@@ -65,7 +65,7 @@ export default function SignUp() {
           </label><br />
           <button>Sign Up</button>
           <br />
-        <div>
+        <div className="icons">
         <p>Or sign up using</p>
         <div>
             <NavLink><i></i></NavLink>

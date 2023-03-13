@@ -53,7 +53,7 @@ export default function LogIn() {
           </label><br />
           <button>Log in</button>
           <br />
-        <div>
+        <div className="icons">
         <p>Or log in using</p>
         <div>
             <NavLink><i></i></NavLink>
