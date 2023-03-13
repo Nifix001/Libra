@@ -32,7 +32,7 @@ export default function SignUp() {
             <img src={img1} alt="" />
         </header>
         <div className="signup">
-        <form className="form" onSubmit={handleSubmit}>
+        <form className="form1" onSubmit={handleSubmit}>
           <header>
             <h2>SIGN UP</h2>
           </header>
@@ -43,7 +43,7 @@ export default function SignUp() {
           name="email"
           value={userData.email}
           onChange={handleChange}
-          id="email"/><br />
+          id="email"/><hr />
           </label><br />
           <label htmlFor="pword">Password<br />
           <input 
@@ -52,7 +52,7 @@ export default function SignUp() {
           name="password" 
           value={userData.password}
           onChange={handleChange}
-          id="pword"/><br />
+          id="pword"/><hr />
           </label><br />
           <label htmlFor="confirm">Confirm Password<br />
           <input 
@@ -61,7 +61,7 @@ export default function SignUp() {
           name="confirmPassword"
           value={userData.confirmPassword}
           onChange={handleChange} 
-          id="confirm"/><br />
+          id="confirm"/><hr />
           </label><br />
           <button>Sign Up</button>
           <br />

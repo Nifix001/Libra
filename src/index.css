@@ -744,7 +744,7 @@ color: #5E5A5E;
 }
 
 .form header{
-  margin-top: -150px;
+  margin-top: -210px;
   align-items: center;
 }
 
@@ -770,6 +770,77 @@ color: #5E5A5E;
 }
 
 .form input{
+  width: 416px;
+  height: 30px;
+  border: none;
+}
+
+.form button{
+  background-color: #19CC56;
+  border: none;
+  border-radius: 16px;
+  font-family: 'Lexend';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 35px;
+  width: 190px;
+  height: 50px;
+  color: #FFFFFF;
+}
+.form1 button{
+  background-color: #19CC56;
+  border: none;
+  border-radius: 16px;
+  font-family: 'Lexend';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 35px;
+  width: 190px;
+  height: 50px;
+  color: #FFFFFF;
+}
+
+.form1{
+  background-color: #FFFFFF;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 550px;
+  width: 550px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+.form1 header{
+  margin-top: -110px;
+  align-items: center;
+}
+
+.form1 h2{
+  font-family: Lexend;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #090509;  
+}
+
+.form1 label{
+  font-family: Lexend;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 416px;
+  height: 80px;
+}
+
+.form1 input{
   width: 416px;
   height: 30px;
   border: none;
