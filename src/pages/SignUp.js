@@ -1,6 +1,9 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import img1 from "../images/Frame.png";
+import fot1 from "../images/Google svg.png"
+import fot2 from "../images/Facebook svg.png"
+import fot3 from "../images/Twitter  svg.png"
 
 export default function SignUp() {
   const [userData, setUserData] = useState({
@@ -71,9 +74,9 @@ export default function SignUp() {
         <div className="icons">
         <p>Or sign up using</p>
         <div>
-            <NavLink><i></i></NavLink>
-            <NavLink><i></i></NavLink>
-            <NavLink><i></i></NavLink>
+            <NavLink><i>{fot2}</i></NavLink>
+            <NavLink><i>{fot1}</i></NavLink>
+            <NavLink><i>{fot3}</i></NavLink>
         </div>
         </div>
         <p>Already a member? <NavLink to="/login">Login</NavLink></p>

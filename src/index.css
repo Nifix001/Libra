@@ -773,6 +773,7 @@ color: #5E5A5E;
   width: 416px;
   height: 30px;
   border: none;
+  outline: none;
 }
 
 .form button{
@@ -844,6 +845,7 @@ color: #5E5A5E;
   width: 416px;
   height: 30px;
   border: none;
+  outline: none;
 }
 
 .icons{
