@@ -55,7 +55,8 @@ export default function LogIn() {
           onChange={handleChange} 
           id="pword"
           required/><hr />
-          </label><br />
+          </label>
+          <span><NavLink>Forget Password?</NavLink></span><br />
           <button>Log in</button>
           <br />
         <div className="icons">

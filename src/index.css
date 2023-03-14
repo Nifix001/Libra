@@ -739,11 +739,12 @@ color: #5E5A5E;
   height: 550px;
   width: 550px;
   border-radius: 12px;
-  padding-top: 20px;  
+  padding-top: 20px;
+  padding-bottom: 15px;  
 }
 
 .form header{
-  padding-top: -210px;
+  margin-top: -90px;
   align-items: center;
 }
 
@@ -787,7 +788,9 @@ color: #5E5A5E;
   width: 180px;
   height: 50px;
   color: #FFFFFF;
+  margin-top: 20px;
 }
+
 .form1 button{
   background-color: #19CC56;
   border: none;
@@ -799,7 +802,9 @@ color: #5E5A5E;
   line-height: 35px;
   width: 180px;
   height: 50px;
+  padding: 8px 10px;
   color: #FFFFFF;
+  margin-top: 20px;
 }
 
 .form1{
@@ -936,4 +941,20 @@ color: #5E5A5E;
 
 .lastp{
   padding-top: 100px;
+}
+
+span{
+  margin-left: 265px;
+  margin-top: -10px;
+}
+
+span a{
+  font-family: Lexend;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  text-align: end;
+  letter-spacing: 0em;  
+  text-decoration: none;
+  color: #32B5FF; 
 }
