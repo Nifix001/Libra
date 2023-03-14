@@ -40,16 +40,18 @@ export default function LogIn() {
           name="email"
           value={userDetails.email}
           onChange={handleChange} 
-          id="email"/><hr />
+          id="email"
+          required/><hr />
           </label><br />
           <label htmlFor="pword">Password<br />
           <input 
-          type="text" 
+          type="password" 
           placeholder="Enter Password"
           name="password"
           value={userDetails.password}
           onChange={handleChange} 
-          id="pword"/><hr />
+          id="pword"
+          required/><hr />
           </label><br />
           <button>Log in</button>
           <br />
