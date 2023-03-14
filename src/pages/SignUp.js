@@ -74,12 +74,12 @@ export default function SignUp() {
         <div className="icons">
         <p>Or sign up using</p>
         <div>
-            <NavLink><i>{fot2}</i></NavLink>
-            <NavLink><i>{fot1}</i></NavLink>
-            <NavLink><i>{fot3}</i></NavLink>
+            <NavLink><img src={fot2} alt="" /></NavLink>
+            <NavLink><img src={fot1} alt="" /></NavLink>
+            <NavLink><img src={fot3} alt="" /></NavLink>
         </div>
         </div>
-        <p>Already a member? <NavLink to="/login">Login</NavLink></p>
+        <p className="lastp">Already a member? <NavLink to="/login">Log In</NavLink></p>
         </form>
         </div>
         

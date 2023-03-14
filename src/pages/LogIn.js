@@ -61,12 +61,12 @@ export default function LogIn() {
         <div className="icons">
         <p>Or log in using</p>
         <div>
-            <NavLink><i>{fot2}</i></NavLink>
-            <NavLink><i>{fot1}</i></NavLink>
-            <NavLink><i>{fot3}</i></NavLink>
+            <NavLink><img src={fot2} alt="" /></NavLink>
+            <NavLink><img src={fot1} alt="" /></NavLink>
+            <NavLink><img src={fot3} alt="" /></NavLink>
         </div>
         </div>
-        <p>New member? <NavLink to="/sign-up">Sign Up</NavLink></p>
+        <p className="lastp">New member? <NavLink to="/sign-up">Sign Up</NavLink></p>
         </form>
         
         </div>
