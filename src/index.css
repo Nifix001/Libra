@@ -920,7 +920,7 @@ color: #5E5A5E;
   padding-top: 15px;
 }
 
-.icons div a im{
+.icons div a img{
   font-size: 40px;
 }
 
@@ -931,13 +931,13 @@ color: #5E5A5E;
 .icons div{
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 65px;
+  /* justify-content: center;
+  align-items: center; */
+  gap: 100px;
   position: relative;
   top: 80px;
-  right: 350px;
-  height: 10px;
+  right: 380px;
+  
 }
 
 .lastp{
