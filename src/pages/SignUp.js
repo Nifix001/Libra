@@ -48,7 +48,7 @@ export default function SignUp() {
           onChange={handleChange}
           id="email"
           required/><hr />
-          </label><br />
+          </label><br /><br />
           <label htmlFor="pword">Password<br />
           <input 
           type="password" 
@@ -58,7 +58,7 @@ export default function SignUp() {
           onChange={handleChange}
           id="pword"
           required/><hr />
-          </label><br />
+          </label><br /><br />
           <label htmlFor="confirm">Confirm Password<br />
           <input 
           type="password" 
@@ -68,7 +68,7 @@ export default function SignUp() {
           onChange={handleChange} 
           id="confirm"
           required/><hr />
-          </label><br />
+          </label><br /><br />
           <button>Sign Up</button>
           <br />
         <div className="icons">

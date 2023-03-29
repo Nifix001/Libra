@@ -36,7 +36,7 @@ export default function LogIn() {
         <div className="signup">
         <form className="form" onSubmit={handleSubmit}>
         <header><h2>LOG IN</h2></header>
-          <label htmlFor="email">Email<br />
+          <label htmlFor="email">Email<br /> 
           <input 
           type="email" 
           placeholder="Enter E-mail"
@@ -45,7 +45,7 @@ export default function LogIn() {
           onChange={handleChange} 
           id="email"
           required/><hr />
-          </label><br />
+          </label><br /><br />
           <label htmlFor="pword">Password<br />
           <input 
           type="password" 
@@ -56,7 +56,7 @@ export default function LogIn() {
           id="pword"
           required/><hr />
           </label>
-          <span><NavLink>Forget Password?</NavLink></span><br />
+          <span><NavLink>Forget Password?</NavLink></span><br /><br />
           <button>Log in</button>
           <br />
         <div className="icons">
