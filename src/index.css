@@ -741,10 +741,11 @@ color: #5E5A5E;
   flex-direction: column;
   justify-content: center;
   height: 550px;
-  width: 550px;
+  width: 630px;
   border-radius: 12px;
-  padding-top: 50px;
-  padding-bottom: 5px;  
+  padding-top: 70px;
+  padding-bottom: 20px;
+  box-shadow: 0px 4px 12px rgba(51, 51, 51, 0.08);  
 }
 
 .form header{
@@ -754,8 +755,8 @@ color: #5E5A5E;
 
 .form h2{
   font-family: Lexend;
-  font-size: 28px;
-  font-weight: 600;
+  font-size: 32px;
+  font-weight: 680;
   line-height: 38px;
   letter-spacing: 0em;
   text-align: left;
@@ -817,11 +818,12 @@ color: #5E5A5E;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 550px;
-  width: 550px;
+  height: 700px;
+  width: 630px;
   border-radius: 12px;
-  padding-top: 20px;
-  padding-bottom: 60px;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  box-shadow: 0px 4px 12px rgba(51, 51, 51, 0.08);
 }
 
 .form1 header{
@@ -830,8 +832,8 @@ color: #5E5A5E;
 
 .form1 h2{
   font-family: Lexend;
-  font-size: 28px;
-  font-weight: 600;
+  font-size: 32px;
+  font-weight: 680;
   line-height: 38px;
   letter-spacing: 0em;
   text-align: left;
@@ -920,7 +922,8 @@ color: #5E5A5E;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 15px;
+  margin-top: 85px;
+  margin-bottom: 20px;
 }
 
 .icons p{
@@ -934,7 +937,7 @@ color: #5E5A5E;
   align-items: center;
   gap: 110px;
   position: relative;
-  top: 100px;
+  top: 95px;
   right: 370px;
   
 }
@@ -955,9 +958,9 @@ span{
 
 span a{
   font-family: Lexend;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
-  line-height: 22px;
+  line-height: 20px;
   text-align: end;
   letter-spacing: 0em;  
   text-decoration: none;
