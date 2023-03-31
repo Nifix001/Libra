@@ -20,7 +20,7 @@ export default function Footer() {
         <div className="footer-c">
             <p>Contact us on:</p>
             <div className="socials">
-            <NavLink><img src={fot2} alt="" /> </NavLink>
+            <FontAwesomeIcon icon="fa-brands fa-facebook" />
             <NavLink><img src={fot1} alt="" /> </NavLink>
             <NavLink><img src={fot3} alt="" /> </NavLink>
             </div>
