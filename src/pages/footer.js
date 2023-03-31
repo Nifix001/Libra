@@ -3,6 +3,7 @@ import fot from "../images/Rectangle 15.png"
 import fot1 from "../images/Google svg.png"
 import fot2 from "../images/Facebook svg.png"
 import fot3 from "../images/Twitter  svg.png"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 export default function Footer() {
