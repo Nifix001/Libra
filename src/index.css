@@ -707,7 +707,7 @@ color: #5E5A5E;
   color: #FFFFFF;
 }
 
-.socials{
+/* .footer-c .socials{
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -716,7 +716,7 @@ color: #5E5A5E;
   position: relative;
   top:45px;
   right: 650px;
-}
+} */
 
 .bck{
   background: linear-gradient(90deg, rgba(241, 255, 246, 0.86) 0%, rgba(248, 248, 248, 0.86) 101.67%);

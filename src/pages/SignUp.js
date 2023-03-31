@@ -4,6 +4,7 @@ import img1 from "../images/Frame.png";
 import fot1 from "../images/Google svg.png"
 import fot2 from "../images/Facebook svg.png"
 import fot3 from "../images/Twitter  svg.png"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function SignUp() {
   const [userData, setUserData] = useState({
@@ -50,6 +51,7 @@ export default function SignUp() {
           required/><hr />
           </label><br /><br />
           <label htmlFor="pword">Password<br />
+          <FontAwesomeIcon icon="fa-solid fa-user" />
           <input 
           type="password" 
           placeholder="Enter Password"
