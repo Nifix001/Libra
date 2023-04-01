@@ -9,6 +9,7 @@ export default function Footer() {
         <div className="footer-a">
            <img src={fot} alt="" /> 
            <div className="footer-b">
+
             <h3>We dedicate time diligently to provide <br /> books for you <hr /></h3>
             <p>Read through our code of conduct and terms of agreement on<br /> borrowing of books</p>
             <button>Read</button>
