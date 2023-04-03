@@ -707,7 +707,7 @@ color: #5E5A5E;
   color: #FFFFFF;
 }
 
-.footer-c .socials{
+.socials{
   display: flex;
   flex-direction: row;
   justify-content: center;
