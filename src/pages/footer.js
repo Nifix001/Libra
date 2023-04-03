@@ -18,9 +18,9 @@ export default function Footer() {
         <div className="footer-c">
             <p>Contact us on:</p>
             <div className="socials">
-            <FontAwesomeIcon icon="fa-brands fa-facebook" style={{color: "white", fontSize:"40px"}} />
-            <FontAwesomeIcon icon="fa-brands fa-google" style={{color: "white", fontSize:"40px"}} />
-            <FontAwesomeIcon icon="fa-brands fa-twitter" style={{color: "white", fontSize:"40px"}} /> 
+            <FontAwesomeIcon icon="fa-brands fa-facebook" style={{color: "white", fontSize:"50px"}} />
+            <FontAwesomeIcon icon="fa-brands fa-google" style={{color: "white", fontSize:"50x"}} />
+            <FontAwesomeIcon icon="fa-brands fa-twitter" style={{color: "white", fontSize:"50px"}} /> 
             </div>
             <div className="footer-d">
              <NavLink>Libraread Group</NavLink>   
