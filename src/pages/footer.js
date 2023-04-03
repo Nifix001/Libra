@@ -1,4 +1,4 @@
-import { NavLink, } from "react-router-dom";
+import { Link, NavLink, } from "react-router-dom";
 import fot from "../images/Rectangle 15.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
@@ -18,9 +18,9 @@ export default function Footer() {
         <div className="footer-c">
             <p>Contact us on:</p>
             <div className="socials">
-            <FontAwesomeIcon icon="fa-brands fa-facebook" style={{color: "white", fontSize:"50px"}} />
-            <FontAwesomeIcon icon="fa-brands fa-google" style={{color: "white", fontSize:"50x"}} />
-            <FontAwesomeIcon icon="fa-brands fa-twitter" style={{color: "white", fontSize:"50px"}} /> 
+            <Link to='/'><FontAwesomeIcon icon="fa-brands fa-facebook" style={{color: "white", fontSize:"50px"}} /></Link>
+            <Link to='/'><FontAwesomeIcon icon="fa-brands fa-google" style={{color: "white", fontSize:"50px"}} /></Link>
+            <Link to='/'><FontAwesomeIcon icon="fa-brands fa-twitter" style={{color: "white", fontSize:"50px"}} /></Link>
             </div>
             <div className="footer-d">
              <NavLink>Libraread Group</NavLink>   
