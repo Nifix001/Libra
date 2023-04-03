@@ -949,9 +949,9 @@ color: #5E5A5E;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 110px;
+  gap: 100px;
   position: relative;
-  top: 95px;
+  top: 105px;
   right: 370px;
   
 }
