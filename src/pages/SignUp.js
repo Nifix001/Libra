@@ -59,7 +59,8 @@ export default function SignUp() {
           value={userData.password}
           onChange={handleChange}
           id="pword"
-          required/><hr />
+          required/>
+          <hr />
           </label><br /><br />
           <label htmlFor="confirm">Confirm Password<br />
           <input 
