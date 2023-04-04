@@ -51,7 +51,7 @@ export default function SignUp() {
           required/><hr />
           </label><br /><br />
           <label htmlFor="pword">Password<br />
-          <div className="awesome"><FontAwesomeIcon icon="fa-solid fa-user" /><FontAwesomeIcon icon="fa-regular fa-eye" /></div> 
+          <div className="awesome"><FontAwesomeIcon icon="fa-regular fa-lock" /><FontAwesomeIcon icon="fa-regular fa-eye" /></div> 
           <input 
           type="password" 
           placeholder="Enter Password"

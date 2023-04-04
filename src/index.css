@@ -853,6 +853,7 @@ color: #5E5A5E;
   line-height: 30px;
   letter-spacing: 0em;
   text-align: left;
+  padding-left: 30px;
   width: 416px;
   height: 80px;
 }
@@ -868,6 +869,7 @@ color: #5E5A5E;
   line-height: 20px;
   letter-spacing: 0em;
   text-align: left;
+  padding-left: 30px;
   color: #AEADAE;
   
 }
