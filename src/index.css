@@ -980,3 +980,13 @@ span a{
   text-decoration: none;
   color: #32B5FF; 
 }
+
+.awesome{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 300px;
+  position: relative;
+  top: 30px;
+}
