@@ -41,6 +41,7 @@ export default function SignUp() {
             <h2>SIGN UP</h2>
           </header>
           <label htmlFor="email">Email<br />
+          <div className="awesome"><FontAwesomeIcon icon="fa-solid fa-user" style={{color: "#AEADAE", fontSize:"20px"}}/></div> 
           <input 
           type="email" 
           placeholder="Enter E-mail" 
@@ -51,7 +52,7 @@ export default function SignUp() {
           required/><hr />
           </label><br /><br />
           <label htmlFor="pword">Password<br />
-          <div className="awesome"><FontAwesomeIcon icon="fa-regular fa-lock" /><FontAwesomeIcon icon="fa-regular fa-eye" /></div> 
+          <div className="awesome"><FontAwesomeIcon icon="fa-solid fa-lock" style={{color: "#AEADAE", fontSize:"20px"}}/><FontAwesomeIcon icon="fa-regular fa-eye" style={{color: "#AEADAE", fontSize:"20px"}}/></div> 
           <input 
           type="password" 
           placeholder="Enter Password"
@@ -63,6 +64,7 @@ export default function SignUp() {
           <hr />
           </label><br /><br />
           <label htmlFor="confirm">Confirm Password<br />
+          <div className="awesome"><FontAwesomeIcon icon="fa-solid fa-lock" style={{color: "#AEADAE", fontSize:"20px"}}/><FontAwesomeIcon icon="fa-regular fa-eye" style={{color: "#AEADAE", fontSize:"20px"}}/></div> 
           <input 
           type="password" 
           placeholder="Enter Password again"

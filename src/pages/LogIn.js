@@ -4,6 +4,7 @@ import { useState } from "react";
 import fot1 from "../images/Google svg.png"
 import fot2 from "../images/Facebook svg.png"
 import fot3 from "../images/Twitter  svg.png"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function LogIn() {
   const [userDetails, setUserDetails] = useState({
@@ -37,6 +38,7 @@ export default function LogIn() {
         <form className="form" onSubmit={handleSubmit}>
         <header><h2>LOG IN</h2></header>
           <label htmlFor="email">Email<br /> 
+          <div className="awesome2"><FontAwesomeIcon icon="fa-solid fa-user" style={{color: "#AEADAE", fontSize:"20px"}}/></div> 
           <input 
           type="email" 
           placeholder="Enter E-mail"
@@ -47,6 +49,7 @@ export default function LogIn() {
           required/><hr />
           </label><br /><br />
           <label htmlFor="pword">Password<br />
+          <div className="awesome2"><FontAwesomeIcon icon="fa-solid fa-lock" style={{color: "#AEADAE", fontSize:"20px"}}/><FontAwesomeIcon icon="fa-regular fa-eye" style={{color: "#AEADAE", fontSize:"20px"}}/></div>
           <input 
           type="password" 
           placeholder="Enter Password"
