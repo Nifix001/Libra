@@ -47,7 +47,7 @@ export default function LogIn() {
           onChange={handleChange} 
           id="email"
           required/><hr />
-          </label><br /><br />
+          </label><br />
           <label htmlFor="pword">Password<br />
           <div className="awesome2"><FontAwesomeIcon icon="fa-solid fa-lock" style={{color: "#AEADAE", fontSize:"20px"}}/><FontAwesomeIcon icon="fa-regular fa-eye" style={{color: "#AEADAE", fontSize:"20px"}}/></div>
           <input 
