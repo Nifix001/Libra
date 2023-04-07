@@ -994,6 +994,7 @@ span a{
   gap: 370px;
   position: relative;
   top: 30px;
+  margin-top: -20px;
 }
 
 .awesome2{
@@ -1004,5 +1005,6 @@ span a{
   gap: 370px;
   position: relative;
   top: 30px;
+  margin-top: -20px;
 }
 
