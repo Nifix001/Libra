@@ -9,6 +9,7 @@ body{
   margin: 0;
   padding: 0 10px;
   overflow-x: hidden;
+  width: 100vw;
 }
 header{
   display: flex;
@@ -871,6 +872,7 @@ color: #5E5A5E;
   text-align: left;
   padding-left: 35px;
   color: #AEADAE;
+  margin-top: -10px;
   
 }
 
