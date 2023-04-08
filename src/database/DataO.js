@@ -32,6 +32,34 @@ const DataO = [
         image: ot4,
         button: "View details"
     },
+    {
+        id: 4,
+        title: "The Alchemist",
+        author: "Paulo Coelho",
+        image: ot1,
+        button: "View details"
+    },
+    {
+        id: 5,
+        title: "A confederacy of dunces",
+        author: "John Kennedy .T",
+        image: ot2,
+        button: "View details"
+    },
+    {
+        id: 6,
+        title: "Why we sleep",
+        author: "Matthew Walker",
+        image: ot3,
+        button: "View details"
+    },
+    {
+        id: 7,
+        title: "An enemy called average",
+        author: "John L. Mason",
+        image: ot4,
+        button: "View details"
+    }
 ]
 
 export default DataO
