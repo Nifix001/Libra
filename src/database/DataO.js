@@ -33,14 +33,14 @@ const DataO = [
         button: "View details"
     },
     {
-        id: 4,
+        id: 5,
         title: "The Alchemist",
         author: "Paulo Coelho",
         image: ot1,
         button: "View details"
     },
     {
-        id: 5,
+        id: 6,
         title: "A confederacy of dunces",
         author: "John Kennedy .T",
         image: ot2,
