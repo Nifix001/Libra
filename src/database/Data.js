@@ -25,6 +25,27 @@ const data = [
         image: img7,
         button: "View details"
     },
+    {
+        id: 4,
+        title: "Half of a yellow sun",
+        author: "Austin Klean",
+        image: img5,
+        button: "View details"
+    },
+    {
+        id: 5,
+        title: "The sun and her flowers",
+        author: "Rupi Kour",
+        image: img6,
+        button: "View details"
+    },
+    {
+        id: 6,
+        title: "Purple Hisbiscus",
+        author: "Chimamanda Adichie",
+        image: img7,
+        button: "View details"
+    },
 ]
 
 export default data
