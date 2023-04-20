@@ -5,6 +5,9 @@ import DataR from "../database/DataR"
 import Reviews from "../framework/Reviews";
 import Trending from "../framework/Trending";
 import { Swiper, SwiperSlide } from 'swiper/react';
+import "swiper/css";
+import "swiper/css/pagination";
+import "./styles.css";
 
 export default function Others() {
     const dataO = DataO.map(others => {
