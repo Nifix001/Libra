@@ -235,9 +235,9 @@ a img{
 }
 
 
-.trend{
+.mySwiper{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 25px;
   justify-content: center;
   margin-top: 80px;
@@ -1013,23 +1013,5 @@ span a{
   height: 100%;
 }
 
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
 
-  /* Center slide text vertically */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-slide img {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 
