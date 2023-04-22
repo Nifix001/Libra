@@ -51,9 +51,10 @@ export default function Others() {
                 </div>
             </div>
             <div className="trend">
-            <Swiper
-        slidesPerView={1}
-        spaceBetween={10}
+            <>
+      <Swiper
+        slidesPerView={3}
+        spaceBetween={30}
         pagination={{
           clickable: true,
         }}
@@ -62,6 +63,7 @@ export default function Others() {
       >
         <SwiperSlide>{ dataO }</SwiperSlide>
       </Swiper>
+    </>
             </div>
             <div className="nav-btn">
             <NavLink><div></div></NavLink>
