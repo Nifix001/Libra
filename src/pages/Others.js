@@ -50,7 +50,7 @@ export default function Others() {
                 <i></i>
                 </div>
             </div>
-            <div className="trend">
+            
             <>
       <Swiper
         slidesPerView={3}
@@ -64,7 +64,6 @@ export default function Others() {
         <SwiperSlide>{ dataO }</SwiperSlide>
       </Swiper>
     </>
-            </div>
             <div className="nav-btn">
             <NavLink><div></div></NavLink>
             <NavLink><div></div></NavLink>

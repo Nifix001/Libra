@@ -235,7 +235,7 @@ a img{
 }
 
 
-.mySwiper{
+.mySwiper SwiperSlide{
   display: flex;
   flex-direction: row;
   gap: 25px;
