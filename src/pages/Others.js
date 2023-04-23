@@ -53,14 +53,13 @@ export default function Others() {
             
             <>
       <Swiper
-        direction='horizontal'
         slidesPerView={3}
         spaceBetween={30}
         pagination={{
           clickable: true,
         }}
         modules={[Pagination]}
-        className="mySwiper"
+        loop={true}
       >
         <SwiperSlide>{ dataO }</SwiperSlide>
       </Swiper>
