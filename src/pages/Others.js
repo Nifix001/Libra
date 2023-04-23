@@ -7,7 +7,7 @@ import Trending from "../framework/Trending";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper";
+import { Pagination, Autoplay, Navigation } from "swiper";
 
 export default function Others() {
     const dataO = DataO.map(others => {
@@ -55,11 +55,15 @@ export default function Others() {
       <Swiper
         slidesPerView={3}
         spaceBetween={30}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         pagination={{
           clickable: true,
         }}
-        modules={[Pagination]}
-        loop={true}
+        modules={[ Autoplay, Pagination, Navigation]}
+        navigation={true}
       >
         <SwiperSlide>{ dataO }</SwiperSlide>
       </Swiper>
