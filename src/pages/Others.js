@@ -53,6 +53,7 @@ export default function Others() {
             
             <>
       <Swiper
+        direction='horizontal'
         slidesPerView={3}
         spaceBetween={30}
         pagination={{
