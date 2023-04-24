@@ -55,10 +55,10 @@ export default function Others() {
                 </div>
             </div>
             
-            <>
+            <div>
             <Swiper
         slidesPerView={1}
-        spaceBetween={10}
+        spaceBetween={30}
         pagination={{
           clickable: true,
         }}
@@ -81,7 +81,7 @@ export default function Others() {
       >
       { dataO }
         </Swiper>
-    </>
+    </div>
             <div className="nav-btn">
             <NavLink><div></div></NavLink>
             <NavLink><div></div></NavLink>
