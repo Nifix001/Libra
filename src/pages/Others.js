@@ -14,30 +14,6 @@ import { Pagination, Autoplay, Navigation } from "swiper";
 export default function Others() {
     const dataO = DataO.map(others => {
         return(
-          <>
-               <Swiper
-        slidesPerView={1}
-        spaceBetween={10}
-        pagination={{
-          clickable: true,
-        }}
-        breakpoints={{
-          640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          768: {
-            slidesPerView: 4,
-            spaceBetween: 40,
-          },
-          1024: {
-            slidesPerView: 5,
-            spaceBetween: 50,
-          },
-        }}
-        modules={[Pagination]}
-        className="mySwiper"
-      >
         <SwiperSlide>
             <Trending
             key={others.id}
@@ -47,8 +23,6 @@ export default function Others() {
             button={others.button}
             />
             </SwiperSlide>
-            </Swiper>
-            </>
         )
     })
 
@@ -82,8 +56,30 @@ export default function Others() {
             </div>
             
             <>
-            <Swiper>
-        <SwiperSlide>{ dataO }</SwiperSlide>
+            <Swiper
+        slidesPerView={1}
+        spaceBetween={10}
+        pagination={{
+          clickable: true,
+        }}
+        breakpoints={{
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+          },
+        }}
+        modules={[Pagination]}
+        className="mySwiper"
+      >
+      { dataO }
         </Swiper>
     </>
             <div className="nav-btn">
