@@ -38,6 +38,7 @@ export default function Others() {
         modules={[Pagination]}
         className="mySwiper"
       >
+        <SwiperSlide>
             <Trending
             key={others.id}
             image={others.image}
@@ -45,6 +46,7 @@ export default function Others() {
             author={others.author}
             button={others.button}
             />
+            </SwiperSlide>
             </Swiper>
             </>
         )
