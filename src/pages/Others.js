@@ -7,6 +7,8 @@ import Trending from "../framework/Trending";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
 import "swiper/css/pagination";
+import 'swiper/css/navigation';
+import 'swiper/css/scrollbar';
 import { Pagination, Autoplay, Navigation } from "swiper";
 
 export default function Others() {
