@@ -55,25 +55,25 @@ export default function Others() {
                 </div>
             </div>
             
-            <>
+            <div>
             <Swiper
               slidesPerView={3}
-              spaceBetween={30}
-              centeredSlides={true}
+              spaceBetween={0}
+              centeredSlides={false}
               autoplay={{
                 delay: 2500,
                 disableOnInteraction: false,
               }}
               pagination={{
-                clickable: true,
+                clickable: false,
               }}
-              navigation={true}
+              navigation={false}
               modules={[Autoplay, Pagination, Navigation]}
               className="mySwiper"
             >
                 { dataO }
-        </Swiper>
-    </>
+            </Swiper>
+            </div>
             <div className="nav-btn">
             <NavLink><div></div></NavLink>
             <NavLink><div></div></NavLink>
