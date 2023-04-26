@@ -55,9 +55,9 @@ export default function Others() {
                 </div>
             </div>
             
-            <div>
+            <div className="trend">
             <Swiper
-              slidesPerView={3}
+              slidesPerView={4}
               spaceBetween={0}
               centeredSlides={false}
               autoplay={{
@@ -65,7 +65,7 @@ export default function Others() {
                 disableOnInteraction: false,
               }}
               pagination={{
-                clickable: false,
+                clickable: true,
               }}
               navigation={false}
               modules={[Autoplay, Pagination, Navigation]}
