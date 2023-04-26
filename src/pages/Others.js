@@ -14,6 +14,19 @@ import { Pagination, Autoplay, Navigation } from "swiper";
 export default function Others() {
     const dataO = DataO.map(others => {
         return(
+          <Swiper
+          slidesPerView={3}
+          spaceBetween={30}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[ Autoplay, Pagination, Navigation]}
+          navigation={true}
+        >
             <Trending
             key={others.id}
             image={others.image}
@@ -21,6 +34,7 @@ export default function Others() {
             author={others.author}
             button={others.button}
             />
+            </Swiper>
         )
     })
 
@@ -54,21 +68,7 @@ export default function Others() {
             </div>
             
             <>
-      <Swiper
-        slidesPerView={3}
-        spaceBetween={30}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[ Autoplay, Pagination, Navigation]}
-        navigation={true}
-      >
         <SwiperSlide>{ dataO }</SwiperSlide>
-      </Swiper>
     </>
             <div className="nav-btn">
             <NavLink><div></div></NavLink>
