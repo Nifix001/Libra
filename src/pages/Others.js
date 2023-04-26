@@ -55,33 +55,25 @@ export default function Others() {
                 </div>
             </div>
             
-            <div>
+            <>
             <Swiper
-        slidesPerView={1}
-        spaceBetween={30}
-        pagination={{
-          clickable: true,
-        }}
-        breakpoints={{
-          640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          768: {
-            slidesPerView: 4,
-            spaceBetween: 40,
-          },
-          1024: {
-            slidesPerView: 5,
-            spaceBetween: 50,
-          },
-        }}
-        modules={[Pagination]}
-        className="mySwiper"
-      >
-      { dataO }
+              slidesPerView={3}
+              spaceBetween={30}
+              centeredSlides={true}
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
+              pagination={{
+                clickable: true,
+              }}
+              navigation={true}
+              modules={[Autoplay, Pagination, Navigation]}
+              className="mySwiper"
+            >
+                { dataO }
         </Swiper>
-    </div>
+    </>
             <div className="nav-btn">
             <NavLink><div></div></NavLink>
             <NavLink><div></div></NavLink>
