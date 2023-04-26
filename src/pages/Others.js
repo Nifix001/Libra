@@ -14,8 +14,8 @@ import { Pagination, Autoplay, Navigation } from "swiper";
 export default function Others() {
     const dataO = DataO.map(others => {
         return(
+          <>
           <Swiper
-          slidesPerView={3}
           spaceBetween={30}
           autoplay={{
             delay: 2500,
@@ -35,6 +35,7 @@ export default function Others() {
             button={others.button}
             />
             </Swiper>
+            </>
         )
     })
 
@@ -68,7 +69,9 @@ export default function Others() {
             </div>
             
             <>
+            <Swiper>
         <SwiperSlide>{ dataO }</SwiperSlide>
+        </Swiper>
     </>
             <div className="nav-btn">
             <NavLink><div></div></NavLink>
