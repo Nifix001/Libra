@@ -88,17 +88,14 @@ export default function Others() {
             <div className="reviews-1">
             <Swiper
               slidesPerView={4}
-              spaceBetween={10}
+              spaceBetween={15}
               centeredSlides={false}
               autoplay={{
                 delay: 2500,
                 disableOnInteraction: false,
               }}
-              pagination={{
-                clickable: false,
-              }}
               navigation={false}
-              modules={[Autoplay, Pagination, Navigation]}
+              modules={[Autoplay, Navigation]}
               className="mySwiper"
             >
                 { dataR }
