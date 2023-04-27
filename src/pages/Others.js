@@ -28,6 +28,7 @@ export default function Others() {
 
     const dataR = DataR.map(reviews => {
         return (
+          <SwiperSlide>
             <Reviews 
             key={reviews.id}
             image={reviews.image}
@@ -36,6 +37,7 @@ export default function Others() {
             review={reviews.review}
             ratings={reviews.ratings}
             />
+          </SwiperSlide>
         )
     })
   return (
@@ -84,7 +86,23 @@ export default function Others() {
       <div className="reviews">
         <h3>Reviews and Ratings</h3>
             <div className="reviews-1">
+            <Swiper
+              slidesPerView={4}
+              spaceBetween={10}
+              centeredSlides={false}
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
+              pagination={{
+                clickable: false,
+              }}
+              navigation={false}
+              modules={[Autoplay, Pagination, Navigation]}
+              className="mySwiper"
+            >
                 { dataR }
+            </Swiper>
             </div>
             <div className="nav-btn">
                 <NavLink><div></div></NavLink>
