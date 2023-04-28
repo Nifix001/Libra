@@ -46,6 +46,13 @@ const data = [
         image: img7,
         button: "View details"
     },
+    {
+        id: 7,
+        title: "The sun and her flowers",
+        author: "Rupi Kour",
+        image: img6,
+        button: "View details"
+    }
 ]
 
 export default data
