@@ -1,6 +1,5 @@
 import { NavLink, Outlet } from "react-router-dom";
 import vector from "../images/chevron-down.png";
-import img4 from "../images/image 7.png";
 import data from "../database/Data";
 import DataW from "../database/DataW";
 import WhatweDo from "../framework/WhatWeDo";
