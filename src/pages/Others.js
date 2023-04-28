@@ -88,7 +88,7 @@ export default function Others() {
             <div className="reviews-1">
             <Swiper
               slidesPerView={4}
-              spaceBetween={15}
+              spaceBetween={20}
               centeredSlides={false}
               autoplay={{
                 delay: 2500,
