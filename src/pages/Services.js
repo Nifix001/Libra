@@ -62,19 +62,6 @@ export default function Services(props) {
               modules={[Autoplay, Pagination, Navigation]}
               className="mySwiper"
             >
-            <div className="trends-1">
-                <div className="trends-2a">
-                    <img src={img4} alt="" />
-                </div>
-                <div className="trends-3">
-                    <h5>Steal like an artist</h5>
-                    <h6>Austin Kleon</h6>
-                    <div className="trends-4">
-                        <i></i>
-                        <button>View details</button>
-                    </div>
-                </div>
-            </div>
                 { trending }
                 </Swiper>
             </div>
