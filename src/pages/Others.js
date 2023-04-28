@@ -56,7 +56,6 @@ export default function Others() {
                 <i></i>
                 </div>
             </div>
-            
             <div className="trend">
             <Swiper
               slidesPerView={4}
