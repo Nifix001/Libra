@@ -38,20 +38,29 @@ const DataR = [
     },
     {
         id: 5,
-        image: ot8,
-        name: "Bill Brown",
-        title: "Sales Manager",
+        image: ot6,
+        name: "Collins Aloba",
+        title: "Teacher",
         review: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, voluptatem culpa iusto assumenda explicabo enim? Aliquam, a nisi! Ipsam accusantium est accusamus necessitatibus nobis optio, maiores libero repellendus totam nam.",
         ratings: <i></i>
     },
     {
         id: 6,
+        image: ot7,
+        name: "Alo Bosede",
+        title: "Forex Trader",
+        review: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, voluptatem culpa iusto assumenda explicabo enim? Aliquam, a nisi! Ipsam accusantium est accusamus necessitatibus nobis optio, maiores libero repellendus totam nam.",
+        ratings: <i></i>
+    },
+    {
+        id: 7,
         image: ot8,
         name: "Bill Brown",
         title: "Sales Manager",
         review: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, voluptatem culpa iusto assumenda explicabo enim? Aliquam, a nisi! Ipsam accusantium est accusamus necessitatibus nobis optio, maiores libero repellendus totam nam.",
         ratings: <i></i>
     },
+
 ]
 
 export default DataR
