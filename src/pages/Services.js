@@ -46,8 +46,22 @@ export default function Services(props) {
         </div>
         <div className="trends">
             <h3>Trending Books</h3>
-            
             <div className="trend">
+            <Swiper
+              slidesPerView={4}
+              spaceBetween={0}
+              centeredSlides={false}
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
+              pagination={{
+                clickable: true,
+              }}
+              navigation={false}
+              modules={[Autoplay, Pagination, Navigation]}
+              className="mySwiper"
+            >
             <div className="trends-1">
                 <div className="trends-2a">
                     <img src={img4} alt="" />
@@ -62,6 +76,7 @@ export default function Services(props) {
                 </div>
             </div>
                 { trending }
+                </Swiper>
             </div>
             <div className="nav-btn">
             <NavLink><div></div></NavLink>
