@@ -10,6 +10,7 @@ import "swiper/css/pagination";
 import 'swiper/css/navigation';
 import 'swiper/css/scrollbar';
 import { Pagination, Autoplay, Navigation, Mousewheel } from "swiper";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Others() {
     const dataO = DataO.map(others => {
@@ -52,8 +53,8 @@ export default function Others() {
                     </select>
                 </div>
                 <div>
+                <FontAwesomeIcon icon="fa-solid fa-magnifying-glass" style={{color: "#AEADAE", fontSize:"20px", position: "relative", left: "780px" , bottom: "0px"}}/>
                 <input type="text" placeholder="Search by name" />
-                <i></i>
                 </div>
             </div>
             <Swiper
