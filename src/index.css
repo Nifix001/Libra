@@ -229,7 +229,7 @@ a img{
 
 .trends{
   background: linear-gradient(90deg, rgba(241, 255, 246, 0.86) 0%, rgba(248, 248, 248, 0.86) 101.67%);
-  padding: 30px 10px 200px 10px;
+  padding: 30px 10px 120px 10px;
   margin-left: -20px;
   margin-right: -20px;
 }
@@ -325,7 +325,7 @@ color: #5E5A5E;
 
 .others{
   background-color: #FFFFFF;
-  padding: 30px 10px 150px 10px;
+  padding: 30px 10px 120px 10px;
 }
 
 .others-1{
@@ -404,7 +404,7 @@ color: #5E5A5E;
   align-items: center;
   justify-content: flex-start;
   gap: 10px;
-  margin: 80px 60px 125px 60px ;
+  margin: 80px 60px 50px 60px ;
 }
 
 .personal-reviews{
@@ -964,19 +964,22 @@ span a{
 
 .swiper-slide {
   margin-top: 60px !important;
-  /* padding-bottom: 106px !important; */
+  padding-bottom: 75px !important;
 }
 
 .swiper-pagination{
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
   position: absolute !important;
-  top: 520px !important;
+  top: 548px !important;
+  gap: 20px !important;
 }
 
 .swiper-pagination-bullet{
-  height: 2px !important;
   width: 84px !important;
   border-radius: 2px !important;
-  padding-top: -31px !important;
 }
 
 .swiper-pagination-bullet-active {
