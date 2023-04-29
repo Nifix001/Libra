@@ -60,7 +60,6 @@ const DataR = [
         review: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, voluptatem culpa iusto assumenda explicabo enim? Aliquam, a nisi! Ipsam accusantium est accusamus necessitatibus nobis optio, maiores libero repellendus totam nam.",
         ratings: <i></i>
     },
-
 ]
 
 export default DataR
