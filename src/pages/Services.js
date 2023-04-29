@@ -62,13 +62,6 @@ export default function Services(props) {
             >
                 { trending }
                 </Swiper>
-            
-            <div className="nav-btn">
-            <NavLink><div></div></NavLink>
-            <NavLink><div></div></NavLink>
-            <NavLink><div></div></NavLink>
-            <NavLink><div></div></NavLink>
-            </div>
         </div>
     
         <NavLink to="others" ><img src={vector} alt="arrow" /></NavLink>

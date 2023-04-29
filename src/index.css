@@ -963,18 +963,20 @@ span a{
 }
 
 .swiper-slide {
-  margin-top: 50px;
+  margin-top: 60px !important;
+  /* padding-bottom: 106px !important; */
 }
 
 .swiper-pagination{
   position: absolute !important;
-  top: 450px !important;
+  top: 520px !important;
 }
 
 .swiper-pagination-bullet{
   height: 2px !important;
   width: 84px !important;
   border-radius: 2px !important;
+  padding-top: -31px !important;
 }
 
 .swiper-pagination-bullet-active {
