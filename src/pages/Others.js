@@ -9,7 +9,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import 'swiper/css/navigation';
 import 'swiper/css/scrollbar';
-import { Pagination, Autoplay, Navigation } from "swiper";
+import { Pagination, Autoplay, Navigation, Mousewheel } from "swiper";
 
 export default function Others() {
     const dataO = DataO.map(others => {
@@ -67,8 +67,9 @@ export default function Others() {
               pagination={{
                 clickable: true,
               }}
+              mousewheel={true}
               navigation={false}
-              modules={[Autoplay, Pagination, Navigation]}
+              modules={[Autoplay, Pagination, Navigation, Mousewheel]}
               className="mySwiper"
             >
                 { dataO }
@@ -85,8 +86,9 @@ export default function Others() {
                 delay: 2500,
                 disableOnInteraction: false,
               }}
+              mousewheel={true}
               navigation={false}
-              modules={[Autoplay, Navigation]}
+              modules={[Autoplay, Navigation, Mousewheel]}
               className="mySwiper"
             >
                 { dataR }

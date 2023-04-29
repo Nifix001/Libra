@@ -9,7 +9,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import 'swiper/css/navigation';
 import 'swiper/css/scrollbar';
-import { Pagination, Autoplay, Navigation } from "swiper";
+import { Pagination, Autoplay, Navigation, Mousewheel } from "swiper";
 
 export default function Services(props) {
     const whatWe = DataW.map(ourwork => {
@@ -46,6 +46,7 @@ export default function Services(props) {
         <div className="trends">
             <h3>Trending Books</h3>
             <Swiper
+            direction={"horizontal"}
               slidesPerView={4}
               spaceBetween={0}
               centeredSlides={false}
@@ -56,8 +57,9 @@ export default function Services(props) {
               pagination={{
                 clickable: true,
               }}
+              mousewheel={true}
               navigation={false}
-              modules={[Autoplay, Pagination, Navigation]}
+              modules={[Autoplay, Pagination, Navigation, Mousewheel]}
               className="mySwiper"
             >
                 { trending }
