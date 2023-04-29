@@ -45,7 +45,6 @@ export default function Services(props) {
         </div>
         <div className="trends">
             <h3>Trending Books</h3>
-            <div className="trend1">
             <Swiper
               slidesPerView={4}
               spaceBetween={0}
@@ -63,7 +62,7 @@ export default function Services(props) {
             >
                 { trending }
                 </Swiper>
-            </div>
+            
             <div className="nav-btn">
             <NavLink><div></div></NavLink>
             <NavLink><div></div></NavLink>

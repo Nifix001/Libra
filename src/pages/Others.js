@@ -56,7 +56,6 @@ export default function Others() {
                 <i></i>
                 </div>
             </div>
-            <div className="trend">
             <Swiper
               slidesPerView={4}
               spaceBetween={0}
@@ -75,13 +74,6 @@ export default function Others() {
                 { dataO }
             </Swiper>
             </div>
-            <div className="nav-btn">
-            <NavLink><div></div></NavLink>
-            <NavLink><div></div></NavLink>
-            <NavLink><div></div></NavLink>
-            <NavLink><div></div></NavLink>
-            </div>
-      </div>
       <div className="reviews">
         <h3>Reviews and Ratings</h3>
             <div className="reviews-1">
@@ -99,11 +91,6 @@ export default function Others() {
             >
                 { dataR }
             </Swiper>
-            </div>
-            <div className="nav-btn">
-                <NavLink><div></div></NavLink>
-                <NavLink><div></div></NavLink>
-                <NavLink><div></div></NavLink>
             </div>
             <div className="hr"> 
             <hr />
