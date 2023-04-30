@@ -306,6 +306,7 @@ color: #5E5A5E;
   flex-direction: row;
   justify-content: center;
   align-items: center; 
+  gap: 20px;
 }
 
 .trends-4 button{

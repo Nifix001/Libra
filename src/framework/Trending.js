@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Trending(props) {
   return (
@@ -10,7 +11,7 @@ export default function Trending(props) {
                     <h5>{props.title}</h5>
                     <h6>{props.author}</h6>
                     <div className="trends-4">
-                        <i></i>
+                    <div><FontAwesomeIcon icon="fa-solid fa-star" style={{color: "#ffd200",}} /><FontAwesomeIcon icon="fa-solid fa-star" style={{color: "#ffd200",}} /><FontAwesomeIcon icon="fa-solid fa-star" style={{color: "#ffd200",}} /><FontAwesomeIcon icon="fa-solid fa-star-half-stroke" style={{color: "#ffd200",}}/></div>
                         <button>{props.button}</button>
                     </div>
                 </div>
