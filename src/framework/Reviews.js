@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 export default function Reviews(props) {
   return (
     <div>
@@ -10,7 +12,7 @@ export default function Reviews(props) {
                         </div>
                     </div>
                         <p>{props.review}</p>
-                        <div>{props.ratings}</div>
+                        <div>{props.ratings}<FontAwesomeIcon icon="fa-solid fa-star-sharp" style={{color: "yellow", fontSize:"20px"}}/></div>
         </div>
     </div>
   )

@@ -2,7 +2,6 @@ import ot5 from "../images/Ellipse 1.png";
 import ot6 from "../images/Ellipse 2.png";
 import ot7 from "../images/Ellipse 3.png";
 import ot8 from "../images/Ellipse 4.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const DataR = [
     {
@@ -11,7 +10,7 @@ const DataR = [
         name: "Karoline Red",
         title: "Chef",
         review: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, voluptatem culpa iusto assumenda explicabo enim? Aliquam, a nisi! Ipsam accusantium est accusamus necessitatibus nobis optio, maiores libero repellendus totam nam.",
-        ratings: <FontAwesomeIcon icon="fa-solid fa-star-sharp" style={{color: "#AEADAE", fontSize:"20px"}}/>
+        ratings: 4 
     },
     {
         id: 2,
@@ -19,7 +18,7 @@ const DataR = [
         name: "Collins Aloba",
         title: "Teacher",
         review: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, voluptatem culpa iusto assumenda explicabo enim? Aliquam, a nisi! Ipsam accusantium est accusamus necessitatibus nobis optio, maiores libero repellendus totam nam.",
-        ratings: <FontAwesomeIcon icon="fa-solid fa-star-sharp" style={{color: "#AEADAE", fontSize:"20px"}}/>
+        ratings: 3
     },
     {
         id: 3,
@@ -27,7 +26,7 @@ const DataR = [
         name: "Alo Bosede",
         title: "Forex Trader",
         review: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, voluptatem culpa iusto assumenda explicabo enim? Aliquam, a nisi! Ipsam accusantium est accusamus necessitatibus nobis optio, maiores libero repellendus totam nam.",
-        ratings: <FontAwesomeIcon icon="fa-solid fa-star-sharp" style={{color: "#AEADAE", fontSize:"20px"}}/>
+        ratings: 4
     },
     {
         id: 4,
@@ -35,7 +34,7 @@ const DataR = [
         name: "Bill Brown",
         title: "Sales Manager",
         review: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, voluptatem culpa iusto assumenda explicabo enim? Aliquam, a nisi! Ipsam accusantium est accusamus necessitatibus nobis optio, maiores libero repellendus totam nam.",
-        ratings: <FontAwesomeIcon icon="fa-solid fa-star-sharp" style={{color: "#AEADAE", fontSize:"20px"}}/>
+        ratings: 4
     },
     {
         id: 5,
@@ -43,7 +42,7 @@ const DataR = [
         name: "Collins Aloba",
         title: "Teacher",
         review: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, voluptatem culpa iusto assumenda explicabo enim? Aliquam, a nisi! Ipsam accusantium est accusamus necessitatibus nobis optio, maiores libero repellendus totam nam.",
-        ratings: <FontAwesomeIcon icon="fa-solid fa-star-sharp" style={{color: "#AEADAE", fontSize:"20px"}}/>
+        ratings: 5
     },
     {
         id: 6,
@@ -51,7 +50,7 @@ const DataR = [
         name: "Alo Bosede",
         title: "Forex Trader",
         review: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, voluptatem culpa iusto assumenda explicabo enim? Aliquam, a nisi! Ipsam accusantium est accusamus necessitatibus nobis optio, maiores libero repellendus totam nam.",
-        ratings: <FontAwesomeIcon icon="fa-solid fa-star-sharp" style={{color: "#AEADAE", fontSize:"20px"}}/>
+        ratings: 5
     },
     {
         id: 7,
@@ -59,7 +58,7 @@ const DataR = [
         name: "Bill Brown",
         title: "Sales Manager",
         review: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, voluptatem culpa iusto assumenda explicabo enim? Aliquam, a nisi! Ipsam accusantium est accusamus necessitatibus nobis optio, maiores libero repellendus totam nam.",
-        ratings: <FontAwesomeIcon icon="fa-solid fa-star-sharp" style={{color: "#AEADAE", fontSize:"20px"}}/>
+        ratings: 4
     },
 ]
 
