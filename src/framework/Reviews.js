@@ -12,7 +12,7 @@ export default function Reviews(props) {
                         </div>
                     </div>
                         <p>{props.review}</p>
-                        <div>{props.ratings}<FontAwesomeIcon icon="fa-solid fa-star" style={{color: "#ffd200",}} /></div>
+                        <div className="personal-star">{props.ratings}<FontAwesomeIcon icon="fa-solid fa-star" style={{color: "#ffd200",}} /></div>
         </div>
     </div>
   )
