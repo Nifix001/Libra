@@ -33,11 +33,11 @@ header img{
 
 header nav a{
   text-decoration: none;
-  color: black;
+  color: #353135;
   margin-left: 40px;
   font-family: Lexend;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 30px;
   letter-spacing: 0.02em;
   text-align: left;
