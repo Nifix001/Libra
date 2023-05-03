@@ -10,7 +10,7 @@ export default function LandingPageLayout() {
         <motion.nav
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.5, delay: 2 }}
         >
             <NavLink to="/">Home</NavLink>
             <NavLink to="services">Services</NavLink>
