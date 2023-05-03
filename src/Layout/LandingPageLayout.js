@@ -7,7 +7,11 @@ export default function LandingPageLayout() {
     <div className="landing">
       <header>
         <img src={img1} alt="logo" />
-        <motion.nav>
+        <motion.nav
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
+        >
             <NavLink to="/">Home</NavLink>
             <NavLink to="services">Services</NavLink>
             <NavLink to="settings">
