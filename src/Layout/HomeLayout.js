@@ -1,5 +1,6 @@
 import { NavLink, Outlet } from "react-router-dom";
 import rec3 from "../images/Rectangle 3.png"
+import { motion } from "framer-motion"
 
 export default function HomeLayout() {
   return (
