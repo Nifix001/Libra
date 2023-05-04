@@ -21,7 +21,11 @@ export default function LandingPageLayout() {
                 </NavLink>
             <NavLink to="help">Help</NavLink>
         </motion.nav>
-        <motion.div className="side-bar">
+        <motion.div className="side-bar"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5, delay: 2 }}
+        >
             <NavLink to="sign-up">Sign Up</NavLink>
             <NavLink to="login" >Login</NavLink>
         </motion.div>
