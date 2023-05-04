@@ -21,10 +21,10 @@ export default function LandingPageLayout() {
                 </NavLink>
             <NavLink to="help">Help</NavLink>
         </motion.nav>
-        <div className="side-bar">
+        <motion.div className="side-bar">
             <NavLink to="sign-up">Sign Up</NavLink>
             <NavLink to="login" >Login</NavLink>
-        </div>
+        </motion.div>
       </header>
 
       <main>
