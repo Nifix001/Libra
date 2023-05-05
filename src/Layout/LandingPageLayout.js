@@ -6,7 +6,11 @@ export default function LandingPageLayout() {
   return (
     <div className="landing">
       <header>
-        <img src={img1} alt="logo" />
+        <motion.img src={img1} alt="logo" 
+        initial={{ opacity: 0 }}
+        animate={{ y: [0, 100, 0], opacity: 1 }}
+        transition={{ ease: "easeIn", duration: 0.5, delay: 2 }}
+        />
         <motion.nav
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
