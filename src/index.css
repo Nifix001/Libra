@@ -70,6 +70,10 @@ header nav a select{
   border-radius: 7px;
 }
 
+.side-bar a:hover{
+  background-color: #19CC56;
+  color: white;
+}
 
 .home-layout1{
   display:flex;
