@@ -73,6 +73,7 @@ header nav a select{
 .side-bar a:hover{
   background-color: #19CC56;
   color: white;
+  padding: 6px 26px;
 }
 
 .home-layout1{
