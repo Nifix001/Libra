@@ -22,10 +22,8 @@ export default function LandingPageLayout() {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 2 }}
         >
-            <motion.NavLink to="sign-up"
-            // whileHover={{ scale: 1.1 }}
-            >Sign Up</motion.NavLink>
-            <motion.NavLink to="login" >Login</motion.NavLink>
+            <NavLink to="sign-up">Sign Up</NavLink>
+            <NavLink to="login" >Login</NavLink>
         </motion.div>
       </header>
 
