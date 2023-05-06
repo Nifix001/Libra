@@ -10,6 +10,7 @@ import "swiper/css/pagination";
 import 'swiper/css/navigation';
 import 'swiper/css/scrollbar';
 import { Pagination, Autoplay, Navigation, Mousewheel } from "swiper";
+import { motion } from "framer-motion";
 
 export default function Services(props) {
     const whatWe = DataW.map(ourwork => {
@@ -38,7 +39,11 @@ export default function Services(props) {
     })
 
   return (
-    <div className="srv">
+    <motion.div className="srv"
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ duration: 0.5, delay: 1.5 }}
+    >
         <h3>What We Do</h3>
         <div className="services">
             { whatWe }
@@ -68,6 +73,6 @@ export default function Services(props) {
     
         <NavLink to="others" ><img src={vector} alt="arrow" /></NavLink>
         <Outlet />
-    </div>
+    </motion.div>
   )
 }
