@@ -39,16 +39,24 @@ export default function Services(props) {
     })
 
   return (
-    <motion.div className="srv"
-    initial={{ opacity: 0 }}
-    animate={{ opacity: 1 }}
-    transition={{ duration: 0.5, delay: 1.5 }}
-    >
-        <h3>What We Do</h3>
-        <div className="services">
+    <div className="srv">
+        <motion.h3
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5, delay: 1.5 }}   
+        >What We Do</motion.h3>
+        <motion.div className="services"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5, delay: 1.5 }}  
+        >
             { whatWe }
-        </div>
-        <div className="trends">
+        </motion.div>
+        <motion.div className="trends"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5, delay: 1.5 }}
+        >
             <h3>Trending Books</h3>
             <Swiper
             direction={"horizontal"}
@@ -69,10 +77,10 @@ export default function Services(props) {
             >
                 { trending }
                 </Swiper>
-        </div>
+        </motion.div>
     
         <NavLink to="others" ><img src={vector} alt="arrow" /></NavLink>
         <Outlet />
-    </motion.div>
+    </div>
   )
 }
