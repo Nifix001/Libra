@@ -55,7 +55,7 @@ export default function Services(props) {
         <motion.div className="trends"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.5, delay: 1.5 }}
+        transition={{ duration: 0.5, delay: 2.5 }}
         >
             <h3>Trending Books</h3>
             <Swiper
