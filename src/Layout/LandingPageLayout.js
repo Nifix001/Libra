@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 export default function LandingPageLayout() {
   return (
     <div className="landing">
-      <header>
+      <motion.header>
         <img src={img1} alt="logo" />
         <nav>
             <NavLink to="/">Home</NavLink>
@@ -21,7 +21,7 @@ export default function LandingPageLayout() {
             <NavLink to="sign-up">Sign Up</NavLink>
             <NavLink to="login" >Login</NavLink>
         </motion.div>
-      </header>
+      </motion.header>
 
       <main>
         <Outlet />
