@@ -11,6 +11,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/scrollbar';
 import { Pagination, Autoplay, Navigation, Mousewheel } from "swiper";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { motion } from "framer-motion";
 
 export default function Others() {
     const dataO = DataO.map(others => {
@@ -57,6 +58,11 @@ export default function Others() {
                 <input type="text" placeholder="Search by name" />
                 </div>
             </div>
+            <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1.5, delay: 0.8}}
+            >
             <Swiper
               slidesPerView={4}
               spaceBetween={0}
@@ -75,6 +81,7 @@ export default function Others() {
             >
                 { dataO }
             </Swiper>
+            </motion.div>
             </div>
       <div className="reviews">
         <h3>Reviews and Ratings</h3>
