@@ -41,21 +41,21 @@ export default function Services(props) {
   return (
     <div className="srv">
         <motion.h3
-        initial={{ opacity: 0, y:-50 }}
+        initial={{ opacity: 0, y:-30 }}
         animate={{ opacity: 1, y:0 }}
-        transition={{ duration: 0.5, delay: 1.5 }}   
+        transition={{ duration: 0.5, delay: 1 }}   
         >What We Do</motion.h3>
         <motion.div className="services"
-        initial={{ opacity: 0, y:10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 2 }}  
+        initial={{ opacity: 0, x:-50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1.5, delay: 2}}  
         >
             { whatWe }
         </motion.div>
         <motion.div className="trends"
         initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.5, delay: 2.5 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1.5, delay: 0.8}}
         >
             <h3>Trending Books</h3>
             <Swiper
