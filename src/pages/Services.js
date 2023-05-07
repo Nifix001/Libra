@@ -79,7 +79,9 @@ export default function Services(props) {
                 </Swiper>
         </motion.div>
     
-        <NavLink to="others" ><img src={vector} alt="arrow" /></NavLink>
+        <motion.div>
+          <NavLink to="others" ><img src={vector} alt="arrow" /></NavLink>
+        </motion.div>
         <Outlet />
     </div>
   )
