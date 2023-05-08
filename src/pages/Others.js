@@ -45,18 +45,32 @@ export default function Others() {
   return (
     <div>
         <div className="others">
-            <h3>Other Books</h3>
+            <motion.h3
+            initial={{ opacity: 0, y:-30 }}
+            animate={{ opacity: 1, y:0 }}
+            transition={{ duration: 0.5, delay: 1 }}
+            >
+              Other Books
+            </motion.h3>
             <div className="others-1">
-                <div className="others-2">
+                <motion.div className="others-2"
+                initial={{ opacity: 0, y:-30 }}
+                animate={{ opacity: 1, y:0 }}
+                transition={{ duration: 0.5, delay: 1 }}
+                >
                     <NavLink to="/">All<hr /></NavLink>
                     <select>
                         <option value="">Genre</option>
                     </select>
-                </div>
-                <div>
+                </motion.div>
+                <motion.div
+                initial={{ opacity: 0, y:-30 }}
+                animate={{ opacity: 1, y:0 }}
+                transition={{ duration: 0.5, delay: 1 }}
+                >
                 <FontAwesomeIcon icon="fa-solid fa-magnifying-glass" style={{color: "#AEADAE", fontSize:"20px", position: "relative", left: "780px" , bottom: "0px"}}/>
                 <input type="text" placeholder="Search by name" />
-                </div>
+                </motion.div>
             </div>
             <motion.div
             initial={{ opacity: 0 }}
