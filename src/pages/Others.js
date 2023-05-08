@@ -85,7 +85,11 @@ export default function Others() {
             </div>
       <div className="reviews">
         <h3>Reviews and Ratings</h3>
-            <div className="reviews-1">
+            <div className="reviews-1"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1.5, delay: 0.8}}
+            >
             <Swiper
               slidesPerView={4}
               spaceBetween={20}
