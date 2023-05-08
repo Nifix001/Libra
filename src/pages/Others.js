@@ -55,7 +55,7 @@ export default function Others() {
             <div className="others-1">
                 <motion.div className="others-2"
                 initial={{ opacity: 0, y:-30 }}
-                animate={{ opacity: 1, y:0 }}
+                whileInView={{ opacity: 1, y:0 }}
                 transition={{ duration: 0.5, delay: 1 }}
                 >
                     <NavLink to="/">All<hr /></NavLink>
@@ -65,8 +65,8 @@ export default function Others() {
                 </motion.div>
                 <motion.div
                 initial={{ opacity: 0, y:-30 }}
-                animate={{ opacity: 1, y:0 }}
-                transition={{ duration: 0.5, delay: 1 }}
+                whileInView={{ opacity: 1, y:0 }}
+                transition={{ duration: 0.5, delay: 1.3 }}
                 >
                 <FontAwesomeIcon icon="fa-solid fa-magnifying-glass" style={{color: "#AEADAE", fontSize:"20px", position: "relative", left: "780px" , bottom: "0px"}}/>
                 <input type="text" placeholder="Search by name" />
