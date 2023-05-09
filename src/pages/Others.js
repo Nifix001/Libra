@@ -128,7 +128,7 @@ export default function Others() {
             <motion.div className="hr"
             initial={{ opacity: 0, y:-30 }}
             animate={{ opacity: 1, y:0 }}
-            transition={{ duration: 0.5, delay: 1 }}
+            transition={{ duration: 1.5, delay: 1.2 }}
             > 
             <hr />
             <h4>Have reviews or ratings to about your favourite book? Enter it below.</h4>
@@ -136,7 +136,7 @@ export default function Others() {
             <motion.div className="input-reviews"
             initial={{ opacity: 0, y:-30 }}
             animate={{ opacity: 1, y:0 }}
-            transition={{ duration: 0.5, delay: 1 }}
+            transition={{ duration: 2, delay: 1.5 }}
             >
                 <input type="text" />
                 <button>Send</button>    
