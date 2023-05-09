@@ -104,7 +104,7 @@ export default function Others() {
         transition={{ duration: 0.5, delay: 1 }}
         >Reviews and Ratings
         </motion.h3>
-            <div className="reviews-1"
+            <motion.div className="reviews-1"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1.5, delay: 0.8}}
@@ -124,7 +124,7 @@ export default function Others() {
             >
                 { dataR }
             </Swiper>
-            </div>
+            </motion.div>
             <div className="hr"> 
             <hr />
             <h4>Have reviews or ratings to about your favourite book? Enter it below.</h4>
