@@ -98,7 +98,12 @@ export default function Others() {
             </motion.div>
             </div>
       <div className="reviews">
-        <h3>Reviews and Ratings</h3>
+        <motion.h3
+        initial={{ opacity: 0, y:-30 }}
+        animate={{ opacity: 1, y:0 }}
+        transition={{ duration: 0.5, delay: 1 }}
+        >Reviews and Ratings
+        </motion.h3>
             <div className="reviews-1"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
