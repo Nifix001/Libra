@@ -41,13 +41,13 @@ export default function Services(props) {
   return (
     <div className="srv">
         <motion.h3
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
+        initial={{ opacity: 0, y:-50 }}
+        animate={{ opacity: 1, y:0 }}
         transition={{ duration: 0.5, delay: 1.5 }}   
         >What We Do</motion.h3>
         <motion.div className="services"
-        initial={{ opacity: 0, x:10 }}
-        animate={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, y:10 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 2 }}  
         >
             { whatWe }
