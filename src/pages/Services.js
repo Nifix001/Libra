@@ -48,7 +48,7 @@ export default function Services(props) {
         <motion.div className="services"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.5, delay: 1.5 }}  
+        transition={{ duration: 0.5, delay: 2 }}  
         >
             { whatWe }
         </motion.div>
