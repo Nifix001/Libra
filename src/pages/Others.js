@@ -125,14 +125,22 @@ export default function Others() {
                 { dataR }
             </Swiper>
             </motion.div>
-            <div className="hr"> 
+            <motion.div className="hr"
+            initial={{ opacity: 0, y:-30 }}
+            animate={{ opacity: 1, y:0 }}
+            transition={{ duration: 0.5, delay: 1 }}
+            > 
             <hr />
             <h4>Have reviews or ratings to about your favourite book? Enter it below.</h4>
-            </div>
-            <div className="input-reviews">
+            </motion.div>
+            <motion.div className="input-reviews"
+            initial={{ opacity: 0, y:-30 }}
+            animate={{ opacity: 1, y:0 }}
+            transition={{ duration: 0.5, delay: 1 }}
+            >
                 <input type="text" />
                 <button>Send</button>    
-            </div>       
+            </motion.div>       
 
       </div>
       <NavLink to="footer" ><img src={vector} alt="arrow" /></NavLink>
