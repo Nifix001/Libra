@@ -52,12 +52,17 @@ export default function Services(props) {
         >
             { whatWe }
         </motion.div>
-        <motion.div className="trends"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 1.5, delay: 0.8}}
-        >
-            <h3>Trending Books</h3>
+        <div className="trends">
+            <motion.h3
+            initial={{ opacity: 0, y:-30 }}
+            whileInView={{ opacity: 1, y:0 }}
+            transition={{ duration: 0.5, delay: 1 }}
+            >Trending Books</motion.h3>
+            <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1.5, delay: 0.8}}
+            >
             <Swiper
             direction={"horizontal"}
               slidesPerView={4}
@@ -77,7 +82,8 @@ export default function Services(props) {
             >
                 { trending }
                 </Swiper>
-        </motion.div>
+                </motion.div>
+        </div>
     
         <motion.div>
           <NavLink to="others" ><img src={vector} alt="arrow" /></NavLink>
