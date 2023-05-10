@@ -15,12 +15,12 @@ export default function Footer() {
            <motion.img src={fot} alt=""
            initial={{ opacity: 0, x: -200 }}
            animate={{ opacity: 1, x: 0 }}
-           transition={{ duration: 3, delay: 1.5}}
+           transition={{ duration: 2, delay: 1.5}}
            /> 
            <motion.div className="footer-b"
             initial={{ opacity: 0, x: 200 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 3, delay: 1.5}}
+            transition={{ duration: 2, delay: 1.5}}
            >
             <h3>We dedicate time diligently to provide <br /> books for you <hr /></h3>
             <p>Read through our code of conduct and terms of agreement on<br /> borrowing of books</p>
@@ -30,7 +30,7 @@ export default function Footer() {
         <motion.div className="footer-c"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 1}}>
+        transition={{ duration: 1, delay: 2}}>
             <p>Contact us on:</p>
             <div className="socials">
             <Link to='/'><FontAwesomeIcon icon="fa-brands fa-facebook" style={{color: "white", fontSize:"50px"}} /></Link>
