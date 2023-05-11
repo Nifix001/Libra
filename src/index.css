@@ -83,10 +83,11 @@ header nav a select{
 }
 
 .home-layout1 img{
-  height: 550px;
+  height: 580px;
   width: 50%;
   margin-right: 35px;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
+  margin-top: 20px;
 }
 
 .home-layout1 > div{
