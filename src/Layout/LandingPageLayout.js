@@ -8,7 +8,7 @@ export default function LandingPageLayout() {
       <motion.header
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 0.5, delay: 0.8 }}
+      transition={{ duration: 0.8, delay: 0.8 }}
       >
         <img src={img1} alt="logo" />
         <nav>

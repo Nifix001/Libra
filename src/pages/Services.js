@@ -46,7 +46,7 @@ export default function Services(props) {
         transition={{ duration: 0.5, delay: 1 }}   
         >What We Do</motion.h3>
         <motion.div className="services"
-        initial={{ opacity: 0, x:-50 }}
+        initial={{ opacity: 0, x:-100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1.5, delay: 2}}  
         >
