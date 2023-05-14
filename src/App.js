@@ -33,7 +33,6 @@ const router = createBrowserRouter(
   )
 )
 function App() {
-  const [modal, setModal] = useState(true)
   return (    
     <RouterProvider router={router} />
     
