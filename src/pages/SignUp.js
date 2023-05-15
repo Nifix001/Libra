@@ -37,7 +37,8 @@ export default function SignUp({ showModal }) {
             <img src={img1} alt="" />
         </header>
         <AnimatePresence exitBeforeEnter>
-        <div className="signup">
+          {  showModal && (
+        <motion.div className="signup">
         <form className="form1" onSubmit={handleSubmit}>
           <header>
             <h2>SIGN UP</h2>
@@ -88,7 +89,8 @@ export default function SignUp({ showModal }) {
         </div>
         <p className="lastp">Already a member? <NavLink to="/login">Log In</NavLink></p>
         </form>
-        </div>
+        </motion.div>
+        )}
         </AnimatePresence>
     </div>
   )
