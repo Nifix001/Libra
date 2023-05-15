@@ -7,7 +7,7 @@ import fot3 from "../images/Twitter  svg.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion, AnimatePresence } from "framer-motion";
 
-export default function SignUp({ showModal }) {
+export default function SignUp({ modal }) {
   const [userData, setUserData] = useState({
     email:"",
     password:"",
@@ -37,7 +37,7 @@ export default function SignUp({ showModal }) {
             <img src={img1} alt="" />
         </header>
         <AnimatePresence exitBeforeEnter>
-          {  showModal && (
+          {  modal && (
         <motion.div className="signup"
         initial={{ opacity: 0,}}
         animate={{ opacity: 1,}}
