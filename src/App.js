@@ -15,8 +15,6 @@ import { AnimatePresence } from "framer-motion"
 
 library.add(fas,fab, far)
 
-const [modal, setModal] = useState(true);
-
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route>
@@ -29,14 +27,14 @@ const router = createBrowserRouter(
         
         </Route>
         </Route> 
-      <Route path="sign-up" element={<SignUp modal={modal}/>} />
+      <Route path="sign-up" modal={modal} element={<SignUp />} />
       <Route path="login" element={<LogIn />} />
     </Route>
   )
 )
 function App() {
-  return (
-    
+  const [modal, setModal] = useState(true)
+  return (    
     <RouterProvider router={router} />
     
   );
