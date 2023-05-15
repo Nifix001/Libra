@@ -38,7 +38,10 @@ export default function SignUp({ showModal }) {
         </header>
         <AnimatePresence exitBeforeEnter>
           {  showModal && (
-        <motion.div className="signup">
+        <motion.div className="signup"
+        initial={{ opacity: 0,}}
+        animate={{ opacity: 1,}}
+        >
         <form className="form1" onSubmit={handleSubmit}>
           <header>
             <h2>SIGN UP</h2>
