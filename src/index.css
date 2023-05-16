@@ -991,7 +991,7 @@ span a{
   margin-left: 10px;
 }
 
-.overlay{
+.modal, .overlay{
   width: 100vw;
   height: 100vh;
   top: 0;
@@ -999,5 +999,8 @@ span a{
   right: 0;
   bottom: 0;
   position: fixed;
+}
+
+.overlay{
   background: rgba(49,49,49,0.8);
 }
