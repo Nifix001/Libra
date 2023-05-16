@@ -5,8 +5,9 @@ import fot1 from "../images/Google svg.png"
 import fot2 from "../images/Facebook svg.png"
 import fot3 from "../images/Twitter  svg.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { AnimatePresence } from "framer-motion";
 
-export default function SignUp() {
+export default function SignUp({ showModal }) {
   const [userData, setUserData] = useState({
     email:"",
     password:"",
@@ -35,6 +36,7 @@ export default function SignUp() {
         <header>
             <img src={img1} alt="" />
         </header>
+        <AnimatePresence exitBeforeEnter>
         <div className="signup">
         <form className="form1" onSubmit={handleSubmit}>
           <header>
@@ -87,7 +89,7 @@ export default function SignUp() {
         <p className="lastp">Already a member? <NavLink to="/login">Log In</NavLink></p>
         </form>
         </div>
-        
+        </AnimatePresence>
     </div>
   )
 }
