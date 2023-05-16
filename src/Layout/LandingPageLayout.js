@@ -4,11 +4,6 @@ import { motion } from "framer-motion"
 import { useState } from "react";
 
 export default function LandingPageLayout() {
-  const [modal, setModal] = useState(false);
-
-  const toggleModal = () => {
-    setModal(!modal)
-  }
   return (
     <div className="landing">
       <motion.header
@@ -28,7 +23,7 @@ export default function LandingPageLayout() {
             <NavLink to="help">Help</NavLink>
         </nav>
         <motion.div className="side-bar">
-            <NavLink to="sign-up" onClick={toggleModal}>Sign Up</NavLink>
+            <NavLink to="sign-up" >Sign Up</NavLink>
             <NavLink to="login" >Login</NavLink>
         </motion.div>
       </motion.header>
