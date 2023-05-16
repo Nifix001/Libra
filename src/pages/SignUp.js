@@ -43,7 +43,7 @@ export default function SignUp( ) {
             <img src={img1} alt="" />
         </header>
         <button onClick={toggleModal}>Sign Up</button>
-        <div className="modal"></div>
+        <div className="modal">
         <motion.div className="overlay"
         initial={{ opacity: 0,}}
         animate={{ opacity: 1,}}
@@ -99,7 +99,7 @@ export default function SignUp( ) {
         <p className="lastp">Already a member? <NavLink to="/login">Log In</NavLink></p>
         </form>
         </motion.div>
-        
+        </div>        
     </div>
   )
 }
