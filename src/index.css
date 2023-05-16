@@ -776,6 +776,10 @@ color: #5E5A5E;
 }
 
 .form1{
+  position: relative;
+  top: 50px;
+  right: 20px;
+  left: -500px;
   background-color: #FFFFFF;
   align-items: center;
   display: flex;
@@ -998,7 +1002,6 @@ span a{
   left: 0;
   right: 0;
   bottom: 0;
-  position: fixed;
 }
 
 .overlay{

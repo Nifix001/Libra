@@ -8,12 +8,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
 
 export default function SignUp( ) {
-  const [modal, setModal] = useState(false);
-
-  const toggleModal = () => {
-    setModal(!modal)
-  }
-
   const [userData, setUserData] = useState({
     email:"",
     password:"",
@@ -36,13 +30,21 @@ export default function SignUp( ) {
       alert("enter correct password")
     }
   }
+  const [modal, setModal] = useState(false);
+
+  const toggleModal = () => {
+    setModal(!modal);
+  };
 
   return (
-    <div className="bck">
+    <div >
         <header>
             <img src={img1} alt="" />
         </header>
         <button onClick={toggleModal}>Sign Up</button>
+
+
+        {modal && (
         <div className="modal">
         <motion.div className="overlay"
         initial={{ opacity: 0,}}
@@ -99,7 +101,8 @@ export default function SignUp( ) {
         <p className="lastp">Already a member? <NavLink to="/login">Log In</NavLink></p>
         </form>
         </motion.div>
-        </div>        
+        </div>  
+        )}      
     </div>
   )
 }
