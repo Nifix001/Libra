@@ -44,8 +44,7 @@ export default function SignUp( ) {
         <button onClick={toggleModal}>Sign Up</button>
 
 
-        {modal && (
-        <div className="modal">
+        
         <motion.div className="overlay"
         initial={{ opacity: 0,}}
         animate={{ opacity: 1,}}
@@ -101,8 +100,7 @@ export default function SignUp( ) {
         <p className="lastp">Already a member? <NavLink to="/login">Log In</NavLink></p>
         </form>
         </motion.div>
-        </div>  
-        )}      
+      
     </div>
   )
 }
