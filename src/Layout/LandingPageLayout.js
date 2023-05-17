@@ -1,8 +1,10 @@
 import { NavLink, Outlet } from "react-router-dom";
 import img1 from "../images/Frame.png";
 import { motion } from "framer-motion"
+import { useState } from "react";
 
 export default function LandingPageLayout() {
+  const [modal, setModal] = useState(false);
   return (
     <div className="landing">
       <motion.header

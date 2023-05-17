@@ -36,10 +36,11 @@ export default function SignUp( ) {
         <header>
             <img src={img1} alt="" />
         </header>
-        <motion.div className="signup"
+        <motion.div className="overlay"
         initial={{ opacity: 0,}}
         animate={{ opacity: 1,}}
         >
+          <div className="signup">
         <form className="form1" onSubmit={handleSubmit}>
           <header>
             <h2>SIGN UP</h2>
@@ -90,6 +91,7 @@ export default function SignUp( ) {
         </div>
         <p className="lastp">Already a member? <NavLink to="/login">Log In</NavLink></p>
         </form>
+        </div>
         </motion.div>
         
     </div>
