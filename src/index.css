@@ -779,7 +779,7 @@ color: #5E5A5E;
   position: relative;
   top: 50px;
   right: 20px;
-  left: -500px;
+  left: 500px;
   background-color: #FFFFFF;
   align-items: center;
   display: flex;
