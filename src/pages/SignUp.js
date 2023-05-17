@@ -5,7 +5,7 @@ import fot1 from "../images/Google svg.png"
 import fot2 from "../images/Facebook svg.png"
 import fot3 from "../images/Twitter  svg.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 export default function SignUp( ) {
   const [userData, setUserData] = useState({
