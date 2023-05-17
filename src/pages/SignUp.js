@@ -30,22 +30,13 @@ export default function SignUp( ) {
       alert("enter correct password")
     }
   }
-  const [modal, setModal] = useState(false);
-
-  const toggleModal = () => {
-    setModal(!modal);
-  };
 
   return (
     <div >
         <header>
             <img src={img1} alt="" />
         </header>
-        <button onClick={toggleModal}>Sign Up</button>
-
-
-        
-        <motion.div className="overlay"
+        <motion.div className="signup"
         initial={{ opacity: 0,}}
         animate={{ opacity: 1,}}
         >
