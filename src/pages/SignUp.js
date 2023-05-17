@@ -91,7 +91,6 @@ export default function SignUp( ) {
         <p className="lastp">Already a member? <NavLink to="/login">Log In</NavLink></p>
         </form>
         </motion.div>
-      
     </div>
   )
 }
