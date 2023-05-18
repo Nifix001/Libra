@@ -83,11 +83,15 @@ export default function SignUp( ) {
           <br />
         <div className="icons">
         <p>Or sign up using</p>
-        <div>
+        <motion.div
+        initial={{ opacity: 0,}}
+        whileInView={{ opacity: 1,}}
+        transition={{ duration: 1, delay: 0.8}}
+        >
             <NavLink><img src={fot2} alt="" /></NavLink>
             <NavLink><img src={fot1} alt="" /></NavLink>
             <NavLink><img src={fot3} alt="" /></NavLink>
-        </div>
+        </motion.div>
         </div>
         <p className="lastp">Already a member? <NavLink to="/login">Log In</NavLink></p>
         </form>
