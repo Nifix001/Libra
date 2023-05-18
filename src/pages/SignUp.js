@@ -32,7 +32,7 @@ export default function SignUp( ) {
   }
 
   return (
-    <div >
+    <div className="bck" >
         <header>
             <img src={img1} alt="" />
         </header>
