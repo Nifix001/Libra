@@ -39,6 +39,7 @@ export default function SignUp( ) {
         <motion.div className="signup"
         initial={{ opacity: 0,}}
         animate={{ opacity: 1,}}
+        transition={{ duration: 1.2, delay: 1}}
         >
         <form className="form1" onSubmit={handleSubmit}>
           <header>
