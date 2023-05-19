@@ -5,6 +5,7 @@ import fot1 from "../images/Google svg.png"
 import fot2 from "../images/Facebook svg.png"
 import fot3 from "../images/Twitter  svg.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { motion } from "framer-motion";
 
 export default function LogIn() {
   const [userDetails, setUserDetails] = useState({
@@ -34,7 +35,11 @@ export default function LogIn() {
         <header>
             <img src={img1} alt="" />
         </header>
-        <div className="signup">
+        <motion.div className="signup"
+        initial={{ opacity: 0,}}
+        animate={{ opacity: 1,}}
+        transition={{ duration: 1.2, delay: 1}}
+        >
         <form className="form" onSubmit={handleSubmit}>
         <header><h2>LOG IN</h2></header>
           <label htmlFor="email">Email<br /> 
@@ -64,17 +69,19 @@ export default function LogIn() {
           <br />
         <div className="icons">
         <p>Or log in using</p>
-        <div>
+        <motion.div
+        initial={{ opacity: 0,}}
+        whileInView={{ opacity: 1,}}
+        transition={{ duration: 1, delay: 0.8}}
+        >
             <NavLink><img src={fot2} alt="" /></NavLink>
             <NavLink><img src={fot1} alt="" /></NavLink>
             <NavLink><img src={fot3} alt="" /></NavLink>
-        </div>
+        </motion.div>
         </div>
         <p className="lastp">New member? <NavLink to="/sign-up">Sign Up</NavLink></p>
         </form>
-        
-        </div>
-        
+        </motion.div>
     </div>
   )
 }
