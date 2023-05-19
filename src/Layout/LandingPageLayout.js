@@ -21,10 +21,16 @@ export default function LandingPageLayout() {
                 </NavLink>
             <NavLink to="help">Help</NavLink>
         </nav>
-        <motion.div className="side-bar">
-            <NavLink to="sign-up" >Sign Up</NavLink>
-            <NavLink to="login" >Login</NavLink>
-        </motion.div>
+        <div className="side-bar">
+            <motion.div
+            whileHover={{ scale:1.1 }}
+            transition={{ type:'spring', stifness: 300, duration: 2 }}
+            ><NavLink to="sign-up" >Sign Up</NavLink></motion.div>
+            <motion.div
+            whileHover={{ scale:1.1 }}
+            transition={{ type:'spring', stifness: 300, duration: 2 }}
+            ><NavLink to="login" >Login</NavLink></motion.div>
+        </div>
       </motion.header>
 
       <main>

@@ -55,6 +55,11 @@ header nav a select{
   background: linear-gradient(90deg, rgba(241, 255, 246, 0.86) 0%, rgba(248, 248, 248, 0.86) 101.67%);;
 }
 
+.side-bar{
+  display: flex;
+  flex-direction: row;
+}
+
 .side-bar a{
   border: 2px solid #19CC56;
   text-decoration: none;
@@ -69,12 +74,19 @@ header nav a select{
   color:#19CC56;
   border-radius: 7px;
 }
-
 .side-bar a:hover{
   background-color: #19CC56;
-  color: white;
-  padding: 6px 26px;
-  scale: 1.5;
+  text-decoration: none;
+  padding: 6px 30px;
+  margin: 20px;
+  font-family: Lexend;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: left;
+  color:#ffffff;
+  border-radius: 7px;
 }
 
 .home-layout1{
