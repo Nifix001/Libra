@@ -24,11 +24,11 @@ export default function LandingPageLayout() {
         <div className="side-bar">
             <motion.div
             whileHover={{ scale:1.1 }}
-            transition={{ type:'spring', stifness: 300, duration: 2 }}
+            transition={{ type:'spring', stifness: 200, duration: 2 }}
             ><NavLink to="sign-up" >Sign Up</NavLink></motion.div>
             <motion.div
             whileHover={{ scale:1.1 }}
-            transition={{ type:'spring', stifness: 300, duration: 2 }}
+            transition={{ type:'spring', stifness: 200, duration: 2 }}
             ><NavLink to="login" >Login</NavLink></motion.div>
         </div>
       </motion.header>
