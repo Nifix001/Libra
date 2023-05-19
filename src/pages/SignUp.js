@@ -79,7 +79,10 @@ export default function SignUp( ) {
           id="confirm"
           required/><hr />
           </label><br /><br />
-          <button>Sign Up</button>
+          <motion.button
+          whileHover={{ scale:1.1 }}
+          transition={{ type:'spring', stifness: 300, duration: 2 }}
+          >Sign Up</motion.button>
           <br />
         <div className="icons">
         <p>Or sign up using</p>

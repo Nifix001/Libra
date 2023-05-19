@@ -67,6 +67,7 @@ export default function LogIn() {
           <span><NavLink>Forget Password?</NavLink></span><br /><br />
           <motion.button
           whileHover={{ scale:1.1 }}
+          transition={{ type:'spring', stifness: 300, duration: 2 }}
           >Log in</motion.button>
           <br />
         <div className="icons">
