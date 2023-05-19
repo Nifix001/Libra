@@ -65,7 +65,9 @@ export default function LogIn() {
           required/><hr />
           </label>
           <span><NavLink>Forget Password?</NavLink></span><br /><br />
-          <button>Log in</button>
+          <motion.button
+          whileHover={{ scale:1.1 }}
+          >Log in</motion.button>
           <br />
         <div className="icons">
         <p>Or log in using</p>
