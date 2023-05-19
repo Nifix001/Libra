@@ -10,7 +10,7 @@ export default function HomeLayout() {
       <motion.h1
       initial={{ opacity: 0, x:-200 }}
       animate={{ opacity: 1, x:0 }}
-      transition={{ duration: 1, delay: 2 }}
+      transition={{ duration: 1, delay: 1.5 }}
       >Studying books, <br /> a long lasting way <br /> to changing lives</motion.h1>
       <motion.p
       initial={{ opacity: 0, x:-200 }}
