@@ -148,7 +148,7 @@ export default function Others({ inputRef }) {
             </motion.div>       
 
       </div>
-      <NavLink to="footer" onClick={handleClick} ><img src={vector} alt="arrow" /></NavLink>
+      <NavLink  onClick={handleClick} ><img src={vector} alt="arrow" /></NavLink>
       <Outlet />
     </div>
   )

@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { motion } from "framer-motion";
 
 
-export default function Footer() {
+export default function Footer({ inputRef }) {
   return (
     <div className="footer">
         <motion.div className="footer-a"
@@ -48,7 +48,7 @@ export default function Footer() {
               </NavLink>   
              <NavLink>Terms and Agreement</NavLink>   
             </div>
-            <div className="hr2">
+            <div className="hr2" inputRef={inputRef}>
             <hr />
             </div>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non minus possimus provident!<br /> Quod explicabo inventore in est vero impedit quo doloribus cumque maiores!</p>

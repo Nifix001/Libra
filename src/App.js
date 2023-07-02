@@ -20,9 +20,9 @@ const router = createBrowserRouter(
     <Route>
       <Route path="/" element={<LandingPageLayout />}>
         <Route index element={<HomeLayout />} />
-        <Route path="services" element={<Services inputRef={inputRef} />}>
-        <Route path="others" element={<Others inputRef={inputRef} />}>
-        <Route path="footer" element={<Footer inputRef={inputRef} />} />
+        <Route path="services" element={<Services />}>
+        <Route path="others" element={<Others />}>
+        <Route path="footer" element={<Footer />} />
         </Route>
         
         </Route>
@@ -31,11 +31,11 @@ const router = createBrowserRouter(
       <Route path="login" element={<LogIn />} />
     </Route>
   )
-)
-function App() {
+  )
+  function App() {
   const inputRef = useRef(null);
   return (    
-    <RouterProvider router={router} />
+    <RouterProvider router={router} inputRef={inputRef} />
     
   );
 }
