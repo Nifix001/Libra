@@ -14,6 +14,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
 
 export default function Others() {
+
+  const handleClick = () => {
+    inputRef.current.focus();
+  }
+
     const dataO = DataO.map(others => {
         return(
         <SwiperSlide>
@@ -143,7 +148,7 @@ export default function Others() {
             </motion.div>       
 
       </div>
-      <NavLink to="footer" ><img src={vector} alt="arrow" /></NavLink>
+      <NavLink to="footer" onClick={handleClick} ><img src={vector} alt="arrow" /></NavLink>
       <Outlet />
     </div>
   )
