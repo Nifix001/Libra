@@ -48,7 +48,7 @@ export default function Footer({ inputRef }) {
               </NavLink>   
              <NavLink>Terms and Agreement</NavLink>   
             </div>
-            <div className="hr2" inputRef={inputRef}>
+            <div className="hr2" ref={inputRef}>
             <hr />
             </div>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non minus possimus provident!<br /> Quod explicabo inventore in est vero impedit quo doloribus cumque maiores!</p>
