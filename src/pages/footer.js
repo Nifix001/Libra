@@ -4,13 +4,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { motion } from "framer-motion";
 
 
-export default function Footer({ inputRef }) {
+
+export default function Footer({inputRef}) {
+
+
+  
   return (
     <div className="footer">
         <motion.div className="footer-a"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5, delay: 0.8}}
+        ref={inputRef}
         >
            <motion.img src={fot} alt=""
            initial={{ opacity: 0, x: -200 }}

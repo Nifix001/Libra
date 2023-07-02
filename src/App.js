@@ -10,13 +10,15 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { far } from '@fortawesome/free-regular-svg-icons'
-import { useRef } from "react";
+import {useRef} from 'react';
 
 library.add(fas,fab, far)
 
+
+const inputRef = useRef();
 const router = createBrowserRouter(
   createRoutesFromElements(
-    
+    <>
     <Route>
       <Route path="/" element={<LandingPageLayout />}>
         <Route index element={<HomeLayout />} />
@@ -30,13 +32,14 @@ const router = createBrowserRouter(
       <Route path="sign-up" element={<SignUp />} />
       <Route path="login" element={<LogIn />} />
     </Route>
+    </>
   )
   )
+
+
   function App() {
-  const inputRef = useRef(null);
   return (    
-    <RouterProvider router={router} inputRef={inputRef} />
-    
+    <RouterProvider router={router}  />    
   );
 }
 

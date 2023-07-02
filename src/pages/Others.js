@@ -13,7 +13,7 @@ import { Pagination, Autoplay, Navigation, Mousewheel } from "swiper";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
 
-export default function Others({ inputRef }) {
+export default function Others({inputRef}) {
 
   const handleClick = () => {
     inputRef.current.focus();
@@ -148,7 +148,7 @@ export default function Others({ inputRef }) {
             </motion.div>       
 
       </div>
-      <NavLink  onClick={handleClick} ><img src={vector} alt="arrow" /></NavLink>
+      <NavLink to="footer" onClick={handleClick} ><img src={vector} alt="arrow" /></NavLink>
       <Outlet />
     </div>
   )
