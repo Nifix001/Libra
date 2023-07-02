@@ -12,11 +12,11 @@ import { fab } from '@fortawesome/free-brands-svg-icons'
 import { far } from '@fortawesome/free-regular-svg-icons'
 import { useRef } from "react";
 
-const inputRef = useRef(null);
 library.add(fas,fab, far)
 
 const router = createBrowserRouter(
   createRoutesFromElements(
+    
     <Route>
       <Route path="/" element={<LandingPageLayout />}>
         <Route index element={<HomeLayout />} />
@@ -33,6 +33,7 @@ const router = createBrowserRouter(
   )
 )
 function App() {
+  const inputRef = useRef(null);
   return (    
     <RouterProvider router={router} />
     

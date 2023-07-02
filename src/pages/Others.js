@@ -13,7 +13,7 @@ import { Pagination, Autoplay, Navigation, Mousewheel } from "swiper";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
 
-export default function Others() {
+export default function Others({ inputRef }) {
 
   const handleClick = () => {
     inputRef.current.focus();
