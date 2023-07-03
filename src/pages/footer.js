@@ -5,17 +5,13 @@ import { motion } from "framer-motion";
 
 
 
-export default function Footer({inputRef}) {
-
-
-  
+export default function Footer() {
   return (
     <div className="footer">
         <motion.div className="footer-a"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5, delay: 0.8}}
-        ref={inputRef}
         >
            <motion.img src={fot} alt=""
            initial={{ opacity: 0, x: -200 }}
@@ -53,7 +49,7 @@ export default function Footer({inputRef}) {
               </NavLink>   
              <NavLink>Terms and Agreement</NavLink>   
             </div>
-            <div className="hr2" ref={inputRef}>
+            <div className="hr2">
             <hr />
             </div>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non minus possimus provident!<br /> Quod explicabo inventore in est vero impedit quo doloribus cumque maiores!</p>

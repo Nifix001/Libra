@@ -12,7 +12,12 @@ import 'swiper/css/scrollbar';
 import { Pagination, Autoplay, Navigation, Mousewheel } from "swiper";
 import { motion } from "framer-motion";
 
-export default function Services(props) {
+export default function Services({ re }) {
+  
+  const handleClick = (ref) => {
+    inputRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
+
     const whatWe = DataW.map(ourwork => {
         return(
             <WhatweDo 
@@ -86,7 +91,7 @@ export default function Services(props) {
         </div>
     
         <motion.div>
-          <NavLink to="others" ><img src={vector} alt="arrow" /></NavLink>
+          <NavLink onClick={handleClick} ><img src={vector} alt="arrow" /></NavLink>
         </motion.div>
         <Outlet />
     </div>
