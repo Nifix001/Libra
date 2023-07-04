@@ -1,15 +1,19 @@
+import { useState } from "react"
 import Footer from "./Footer"
 import Others from "./Others"
 import Services from "./Services"
-import { useRef } from "react"
+
 
 const Service = () => {
-    const inputRef = useRef(null);
+    const [activeComponent, setActiveComponent] = useState('component1');
 
+    const handleClick = (componentName) => {
+      setActiveComponent(componentName);
+    }
   return (
     <div>
-        <Services />
-        <Others ref={inputRef} />
+        <Services onButttonClick={handleClick} />
+        <Others isActive={activeComponent === 'component2'} />
         <Footer />
     </div>
   )

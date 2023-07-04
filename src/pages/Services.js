@@ -12,10 +12,10 @@ import 'swiper/css/scrollbar';
 import { Pagination, Autoplay, Navigation, Mousewheel } from "swiper";
 import { motion } from "framer-motion";
 
-export default function Services({ re }) {
+export default function Services({ inputRef }) {
   
   const handleClick = (ref) => {
-    inputRef.current.scrollIntoView({ behavior: 'smooth' });
+    ref.current.scrollIntoView({ behavior: 'smooth' });
   };
 
     const whatWe = DataW.map(ourwork => {
