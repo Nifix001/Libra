@@ -1,4 +1,4 @@
-import { Link, NavLink, Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import vector from "../images/chevron-down.png";
 import data from "../database/Data";
 import DataW from "../database/DataW";
