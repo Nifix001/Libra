@@ -11,8 +11,31 @@ import 'swiper/css/navigation';
 import 'swiper/css/scrollbar';
 import { Pagination, Autoplay, Navigation, Mousewheel } from "swiper";
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 export default function Services() {
+
+    const [errorMessage, setErrorMessage] = useState('');
+  
+    useEffect(() => {
+      const handleResize = () => {
+        const minWidth = 1300;
+  
+        if (window.innerWidth < minWidth ) {
+          setErrorMessage('Screen size is too small. Please resize your window.');
+        } else {
+          setErrorMessage('');
+        }
+      };
+  
+      handleResize();
+  
+      window.addEventListener('resize', handleResize);
+  
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }, []);
 
     const whatWe = DataW.map(ourwork => {
         return(
@@ -53,6 +76,11 @@ export default function Services() {
         >
             { whatWe }
         </motion.div>
+        {errorMessage && (
+        <div className="error-message">
+          <p>{errorMessage}</p>
+        </div>
+      )}
         <div className="trends">
             <motion.h3
             initial={{ opacity: 0, y:-30 }}
