@@ -13,8 +13,7 @@ import { Pagination, Autoplay, Navigation, Mousewheel } from "swiper";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
 
-export default function Others({ inputRef }) {
-
+export default function Others() {
 
     const dataO = DataO.map(others => {
         return(
@@ -46,7 +45,7 @@ export default function Others({ inputRef }) {
     })
   return (
     <div>
-        <div className="others" ref={inputRef}>
+        <div className="others" >
             <motion.h3
             initial={{ opacity: 0, y:-30 }}
             animate={{ opacity: 1, y:0 }}
@@ -146,7 +145,7 @@ export default function Others({ inputRef }) {
 
       </div>
       <motion.div>
-      <NavLink ><img src={vector} alt="arrow" /></NavLink>
+      <NavLink to='footer'><img src={vector} alt="arrow" /></NavLink>
       </motion.div>
       <Outlet />
     </div>

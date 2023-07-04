@@ -1,4 +1,4 @@
-import { NavLink, Outlet } from "react-router-dom";
+import { Link, NavLink, Outlet } from "react-router-dom";
 import vector from "../images/chevron-down.png";
 import data from "../database/Data";
 import DataW from "../database/DataW";
@@ -12,7 +12,7 @@ import 'swiper/css/scrollbar';
 import { Pagination, Autoplay, Navigation, Mousewheel } from "swiper";
 import { motion } from "framer-motion";
 
-export default function Services({ onButtonClick}) {
+export default function Services() {
 
     const whatWe = DataW.map(ourwork => {
         return(
@@ -87,7 +87,7 @@ export default function Services({ onButtonClick}) {
         </div>
     
         <motion.div>
-          <NavLink onClick={() => onButtonClick('component2')} ><img src={vector} alt="arrow" /></NavLink>
+          <NavLink to="others"><img src={vector} alt="arrow" /></NavLink>
         </motion.div>
         <Outlet />
     </div>
