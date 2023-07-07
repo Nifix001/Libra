@@ -1,11 +1,41 @@
 import { NavLink, Outlet } from "react-router-dom";
 import rec3 from "../images/Rectangle 3.png"
 import { motion } from "framer-motion"
+import { useState, useEffect } from "react";
 
 export default function HomeLayout() {
+
+  const [errorMessage, setErrorMessage] = useState('');
+
+  useEffect(() => {
+    const handleResize = () => {
+      const minWidth = 1024;
+      const minHeight = 768;
+
+      if (window.innerWidth < minWidth || window.innerHeight < minHeight) {
+        setErrorMessage('Screen size is too small. Please resize your window.');
+      } else {
+        setErrorMessage('');
+      }
+    };
+
+    handleResize();
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <div className="home-layout">
-      <div className="home-layout1">
+       {errorMessage && (
+        <div className="error-message">
+          <p>{errorMessage}</p>
+        </div>
+      )}
+      {<div className="home-layout1">
       <div>
       <motion.h1
       initial={{ opacity: 0, x:-200 }}
@@ -37,7 +67,7 @@ export default function HomeLayout() {
       animate={{ opacity: 1, x:0 }}
       transition={{ duration: 2, delay: 2 }}
       />
-      </div>
+      </div>}
     
       
 
