@@ -5,12 +5,12 @@ import { useState, useEffect } from "react";
 
 export default function HomeLayout() {
 
-  const [smallScreenSize, setSmallScreenSize] = useState(window.minWidth < 1300);
+  const [smallScreenSize, setSmallScreenSize] = useState(window.minWidth < 1100);
 
   useEffect(() => {
     const handleResize = (e) => {
       e.preventDefault();
-      setSmallScreenSize(window.innerWidth < 1300);
+      setSmallScreenSize(window.innerWidth < 1100);
     };
 
     window.addEventListener('resize', handleResize);

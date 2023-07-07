@@ -24,7 +24,76 @@ header{
   background: linear-gradient(90deg, rgba(241, 255, 246, 0.86) 0%, rgba(248, 248, 248, 0.86) 101.67%);
 }
 
-@media(min-width: 1290px){
+@media(max-width: 1099px){
+  header img{
+    width: 85px;
+    height: 40px;
+    justify-content: flex-start;
+    margin-left: 30px;
+  }
+ 
+  header nav a{
+    text-decoration: none;
+    color: #353135;
+    margin-left: 10px;
+    font-family: Lexend;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    text-align: left;
+  }
+  
+  header nav a select{
+    border: none;
+    color: #353135;
+    font-family: Lexend;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    background: linear-gradient(90deg, rgba(241, 255, 246, 0.86) 0%, rgba(248, 248, 248, 0.86) 101.67%);;
+  }
+  
+  .side-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .side-bar a{
+    border: 2px solid #19CC56;
+    text-decoration: none;
+    padding: 6px 20px;
+    margin: 10px;
+    font-family: Lexend;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#19CC56;
+    border-radius: 7px;
+  }
+  
+  .side-bar a:hover{
+    background-color: #19CC56;
+    text-decoration: none;
+    padding: 6px 20px;
+    margin: 10px;
+    font-family: Lexend;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#ffffff;
+    border-radius: 7px;
+  }
+}
+
+@media(min-width: 1100px){
 header img{
   width: 85px;
   height: 40px;
