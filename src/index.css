@@ -24,6 +24,7 @@ header{
   background: linear-gradient(90deg, rgba(241, 255, 246, 0.86) 0%, rgba(248, 248, 248, 0.86) 101.67%);
 }
 
+@media(min-width: 1290px){
 header img{
   width: 85px;
   height: 40px;
@@ -87,6 +88,7 @@ header nav a select{
   text-align: left;
   color:#ffffff;
   border-radius: 7px;
+}
 }
 
 .home-layout1{
