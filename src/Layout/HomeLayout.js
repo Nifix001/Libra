@@ -5,20 +5,13 @@ import { useState, useEffect } from "react";
 
 export default function HomeLayout() {
 
-  const [errorMessage, setErrorMessage] = useState('');
+  const [errorMessage, setErrorMessage] = useState(window.minWidth < 1300);
 
   useEffect(() => {
-    const handleResize = () => {
-      const minWidth = 1024;
-
-      if (window.innerWidth < minWidth) {
-        setErrorMessage('Screen size is too small. Please resize your window.');
-      } else {
-        setErrorMessage('');
-      }
+    const handleResize = (e) => {
+      e.preventDefault();
+        setErrorMessage(window.innerWidth < 1300);
     };
-
-    handleResize();
 
     window.addEventListener('resize', handleResize);
 
@@ -29,12 +22,12 @@ export default function HomeLayout() {
 
   return (
     <div className="home-layout">
-       {errorMessage && (
+       {errorMessage ? (
         <div className="error-message">
-          <p>{errorMessage}</p>
+          <p>Screen size is too small. Please resize your window.</p>
         </div>
-      )}
-      {<div className="home-layout1">
+      ) : (
+      <div className="home-layout1">
       <div>
       <motion.h1
       initial={{ opacity: 0, x:-200 }}
@@ -66,7 +59,7 @@ export default function HomeLayout() {
       animate={{ opacity: 1, x:0 }}
       transition={{ duration: 2, delay: 2 }}
       />
-      </div>}
+      </div> )}
 
       <Outlet />
     </div>
