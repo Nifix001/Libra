@@ -5,12 +5,12 @@ import { useState, useEffect } from "react";
 
 export default function HomeLayout() {
 
-  const [errorMessage, setErrorMessage] = useState(window.minWidth < 1300);
+  const [smallScreenSize, setSmallScreenSize] = useState(window.minWidth < 1300);
 
   useEffect(() => {
     const handleResize = (e) => {
       e.preventDefault();
-        setErrorMessage(window.innerWidth < 1300);
+      setSmallScreenSize(window.innerWidth < 1300);
     };
 
     window.addEventListener('resize', handleResize);
@@ -22,7 +22,7 @@ export default function HomeLayout() {
 
   return (
     <div className="home-layout">
-       {errorMessage ? (
+       {smallScreenSize ? (
         <div className="error-message">
           <p>Screen size is too small. Please resize your window.</p>
         </div>
