@@ -12,8 +12,24 @@ import 'swiper/css/scrollbar';
 import { Pagination, Autoplay, Navigation, Mousewheel } from "swiper";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
 
 export default function Others() {
+  const [smallScreenSize, setSmallScreenSize] = useState(window.minWidth < 1100);
+
+  useEffect(() => {
+    const handleResize = (e) => {
+      e.preventDefault();
+      setSmallScreenSize(window.innerWidth < 1100);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
 
     const dataO = DataO.map(others => {
         return(
@@ -45,6 +61,26 @@ export default function Others() {
     })
   return (
     <div>
+      {smallScreenSize ? (
+        <div className="error-message">
+          <motion.p
+           initial={{ opacity: 0, }}
+           whileInView={{ opacity: 1, }}
+           transition={{ duration: 1, delay: 0.5 }}
+          >
+            Screen size is currently unavailable,  We are working on it. 
+          </motion.p>
+          <motion.p
+           initial={{ opacity: 0, }}
+           whileInView={{ opacity: 1, }}
+           transition={{ duration: 1, delay: 2.5 }}
+          >
+            Please resize your window.
+          </motion.p>
+
+        </div>
+      ) : (
+        <div>
         <div className="others" >
             <motion.h3
             initial={{ opacity: 0, y:-30 }}
@@ -147,6 +183,7 @@ export default function Others() {
       <motion.div>
       <NavLink to='footer'><img src={vector} alt="arrow" /></NavLink>
       </motion.div>
+      </div>)}
       <Outlet />
     </div>
   )

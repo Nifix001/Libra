@@ -15,27 +15,20 @@ import { useEffect, useState } from "react";
 
 export default function Services() {
 
-    const [errorMessage, setErrorMessage] = useState('');
-  
-    useEffect(() => {
-      const handleResize = () => {
-        const minWidth = 1300;
-  
-        if (window.innerWidth < minWidth ) {
-          setErrorMessage('Screen size is too small. Please resize your window.');
-        } else {
-          setErrorMessage('');
-        }
-      };
-  
-      handleResize();
-  
-      window.addEventListener('resize', handleResize);
-  
-      return () => {
-        window.removeEventListener('resize', handleResize);
-      };
-    }, []);
+  const [smallScreenSize, setSmallScreenSize] = useState(window.minWidth < 1100);
+
+  useEffect(() => {
+    const handleResize = (e) => {
+      e.preventDefault();
+      setSmallScreenSize(window.innerWidth < 1100);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
     const whatWe = DataW.map(ourwork => {
         return(
@@ -64,6 +57,26 @@ export default function Services() {
 
   return (
     <div className="srv">
+      {smallScreenSize ? (
+        <div className="error-message">
+          <motion.p
+           initial={{ opacity: 0, }}
+           whileInView={{ opacity: 1, }}
+           transition={{ duration: 1, delay: 0.5 }}
+          >
+            Screen size is currently unavailable,  We are working on it. 
+          </motion.p>
+          <motion.p
+           initial={{ opacity: 0, }}
+           whileInView={{ opacity: 1, }}
+           transition={{ duration: 1, delay: 2.5 }}
+          >
+            Please resize your window.
+          </motion.p>
+
+        </div>
+      ) : (
+        <div>
         <motion.h3
         initial={{ opacity: 0, y:-30 }}
         animate={{ opacity: 1, y:0 }}
@@ -76,11 +89,6 @@ export default function Services() {
         >
             { whatWe }
         </motion.div>
-        {errorMessage && (
-        <div className="error-message">
-          <p>{errorMessage}</p>
-        </div>
-      )}
         <div className="trends">
             <motion.h3
             initial={{ opacity: 0, y:-30 }}
@@ -117,6 +125,7 @@ export default function Services() {
         <motion.div>
           <NavLink to="others"><img src={vector} alt="arrow" /></NavLink>
         </motion.div>
+        </div>)}
         <Outlet />
     </div>
   )

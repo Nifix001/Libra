@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import img1 from "../images/Frame.png";
 import fot1 from "../images/Google svg.png"
@@ -8,6 +8,23 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
 
 export default function SignUp( ) {
+
+  const [smallScreenSize, setSmallScreenSize] = useState(window.minWidth < 1100);
+
+  useEffect(() => {
+    const handleResize = (e) => {
+      e.preventDefault();
+      setSmallScreenSize(window.innerWidth < 1100);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+
   const [userData, setUserData] = useState({
     email:"",
     password:"",
@@ -33,6 +50,26 @@ export default function SignUp( ) {
 
   return (
     <div className="bck" >
+      {smallScreenSize ? (
+        <div className="error-message">
+          <motion.p
+           initial={{ opacity: 0, }}
+           whileInView={{ opacity: 1, }}
+           transition={{ duration: 1, delay: 0.5 }}
+          >
+            Screen size is currently unavailable,  We are working on it. 
+          </motion.p>
+          <motion.p
+           initial={{ opacity: 0, }}
+           whileInView={{ opacity: 1, }}
+           transition={{ duration: 1, delay: 2.5 }}
+          >
+            Please resize your window.
+          </motion.p>
+
+        </div>
+      ) : (
+        <div>
         <header>
             <img src={img1} alt="" />
         </header>
@@ -98,7 +135,8 @@ export default function SignUp( ) {
         </div>
         <p className="lastp">Already a member? <NavLink to="/login">Log In</NavLink></p>
         </form>
-        </motion.div>
+        </motion.div> 
+        </div>)}
     </div>
   )
 }

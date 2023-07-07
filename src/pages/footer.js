@@ -2,12 +2,48 @@ import { Link, NavLink, } from "react-router-dom";
 import fot from "../images/Rectangle 15.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
 
 
 
 export default function Footer() {
+  const [smallScreenSize, setSmallScreenSize] = useState(window.minWidth < 1100);
+
+  useEffect(() => {
+    const handleResize = (e) => {
+      e.preventDefault();
+      setSmallScreenSize(window.innerWidth < 1100);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <div className="footer">
+      {smallScreenSize ? (
+        <div className="error-message">
+          <motion.p
+           initial={{ opacity: 0, }}
+           whileInView={{ opacity: 1, }}
+           transition={{ duration: 1, delay: 0.5 }}
+          >
+            Screen size is currently unavailable,  We are working on it. 
+          </motion.p>
+          <motion.p
+           initial={{ opacity: 0, }}
+           whileInView={{ opacity: 1, }}
+           transition={{ duration: 1, delay: 2.5 }}
+          >
+            Please resize your window.
+          </motion.p>
+
+        </div>
+      ) : (
+        <div>
         <motion.div className="footer-a"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -54,6 +90,7 @@ export default function Footer() {
             </div>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non minus possimus provident!<br /> Quod explicabo inventore in est vero impedit quo doloribus cumque maiores!</p>
         </motion.div>
+        </div>)}
         
     </div>
   )
