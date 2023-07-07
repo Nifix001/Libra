@@ -10,9 +10,8 @@ export default function HomeLayout() {
   useEffect(() => {
     const handleResize = () => {
       const minWidth = 1024;
-      const minHeight = 768;
 
-      if (window.innerWidth < minWidth || window.innerHeight < minHeight) {
+      if (window.innerWidth < minWidth) {
         setErrorMessage('Screen size is too small. Please resize your window.');
       } else {
         setErrorMessage('');
@@ -68,9 +67,6 @@ export default function HomeLayout() {
       transition={{ duration: 2, delay: 2 }}
       />
       </div>}
-    
-      
-
 
       <Outlet />
     </div>
