@@ -24,7 +24,21 @@ export default function HomeLayout() {
     <div className="home-layout">
        {smallScreenSize ? (
         <div className="error-message">
-          <p>Screen size is too small. Please resize your window.</p>
+          <motion.p
+           initial={{ opacity: 0, }}
+           whileInView={{ opacity: 1, }}
+           transition={{ duration: 1, delay: 0.5 }}
+          >
+            Screen size is currently unavailable,  We are working on it. 
+          </motion.p>
+          <motion.p
+           initial={{ opacity: 0, }}
+           whileInView={{ opacity: 1, }}
+           transition={{ duration: 1, delay: 2.5 }}
+          >
+            Please resize your window.
+          </motion.p>
+
         </div>
       ) : (
       <div className="home-layout1">
