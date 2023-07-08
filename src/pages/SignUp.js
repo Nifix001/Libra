@@ -49,7 +49,7 @@ export default function SignUp( ) {
   }
 
   return (
-    <div className="bck" >
+    <div >
       {smallScreenSize ? (
         <div className="error-message">
           <motion.p
@@ -69,7 +69,7 @@ export default function SignUp( ) {
 
         </div>
       ) : (
-        <div>
+        <div className="bck">
         <header>
             <img src={img1} alt="" />
         </header>

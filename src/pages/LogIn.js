@@ -48,7 +48,7 @@ export default function LogIn() {
   }
 
   return (
-    <div className="bck">
+    <div >
       {smallScreenSize ? (
         <div className="error-message">
           <motion.p
@@ -68,7 +68,7 @@ export default function LogIn() {
 
         </div>
       ) : (
-        <div>
+        <div className="bck">
         <header>
             <img src={img1} alt="" />
         </header>
