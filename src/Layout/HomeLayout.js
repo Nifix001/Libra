@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 
 export default function HomeLayout() {
 
-  const [smallScreenSize, setSmallScreenSize] = useState(window.minWidth < 900);
+  const [smallScreenSize, setSmallScreenSize] = useState(window.innerWidth < 900);
 
   useEffect(() => {
     const handleResize = (e) => {

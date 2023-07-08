@@ -15,12 +15,12 @@ import { useEffect, useState } from "react";
 
 export default function Services() {
 
-  const [smallScreenSize, setSmallScreenSize] = useState(window.minWidth < 1100);
+  const [smallScreenSize, setSmallScreenSize] = useState(window.minWidth < 900);
 
   useEffect(() => {
     const handleResize = (e) => {
       e.preventDefault();
-      setSmallScreenSize(window.innerWidth < 1100);
+      setSmallScreenSize(window.innerWidth < 900);
     };
 
     window.addEventListener('resize', handleResize);
