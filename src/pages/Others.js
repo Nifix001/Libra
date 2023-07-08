@@ -12,7 +12,6 @@ import 'swiper/css/scrollbar';
 import { Pagination, Autoplay, Navigation, Mousewheel } from "swiper";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
 
 export default function Others() {
     const dataO = DataO.map(others => {

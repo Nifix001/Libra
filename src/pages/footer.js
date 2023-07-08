@@ -2,8 +2,6 @@ import { Link, NavLink, } from "react-router-dom";
 import fot from "../images/Rectangle 15.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
-
 
 
 export default function Footer() {
