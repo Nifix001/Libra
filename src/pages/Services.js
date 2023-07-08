@@ -73,7 +73,6 @@ export default function Services() {
           >
             Please resize your window.
           </motion.p>
-
         </div>
       ) : (
         <div>
